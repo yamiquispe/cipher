@@ -1,0 +1,145 @@
+
+body{
+	background: #c7f3b3ff;
+}
+
+
+header{
+	background: #efefefff;
+	width: 101.2%;
+	height: 50%;
+	display: flex;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-left: -8px; 
+	margin-right: -30px;
+	bottom: 0;
+	margin-top: -8px;
+}
+
+
+.logo{
+	width: 100px;
+	height: 120px;
+	margin-left: 100px;
+	padding-top: 1px;
+	padding-bottom: 5px;
+}
+
+
+img{
+	width: 150px;
+	height: 110px;
+	border-radius: 5px;
+	margin-left: 0px;
+}
+
+
+.entidad{
+	font-weight: 570;
+	font-size: 35px;
+	font-family: Batang;
+    margin-right: auto; /* Margen automático a la derecha. */
+	margin-left: auto; /* Margen automático a la izquierda. */
+	padding-top: 35px;
+}
+
+
+.enlace{
+	text-align: center;
+	font-size: 22px;
+	font-weight: 500;
+	padding-top: 27px;
+	padding-bottom: 5px;
+	margin-right: 40px;	
+	width: 200px;
+	height: 30px;
+}
+
+
+h1{
+	/* Las fuentes que llevan espacio deben ir en comillas. */
+	text-align: center;
+	font-family: Batang; /* Tipo de letra */
+	font-size: 4em; /* Tamaño de letra */
+	color: #333333;
+	display: block;
+}
+
+.titulo{
+	width: 90%;
+	padding-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#parrafo{
+	width: 850px;
+	font-size: 18px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nombre{
+	text-align: center;
+	width: 700px;
+	height: 350px; /* Medida real con padding: 460px; */
+	background: #ffffff;
+	margin-left: auto; /* Margen externo */
+	margin-right: auto; /* Margen externo */
+	padding: 15px; /* Margen interno */
+	border: 25px  solid #6aa84f;
+	display: block; /* En inline no puede modificar los anchos y altos ni los bordes.*/
+}
+
+span{
+	font-family: "Comic Sans";
+	font-size: 50px;
+}
+
+
+button{
+	border: none;
+	font-size: 25px;
+	font-family: comic;
+	font-weight: 600;
+	border-radius: 5px;
+	width: 230px;
+	height: 70px;
+	font-color: #ffffff;
+	background: #ffff8aff;
+	border: 8px dashed #ffff55ff; /* Borde del botón. */
+	cursor: pointer;
+}
+
+
+label{
+	font-size: 20px;
+	font-family: comic;
+	font-weight: 500;
+}
+
+
+
+textarea{
+	display: inline-block;;
+}
+
+
+footer{
+	background: #444444ff;
+	width: 100%;
+	height: 38px;
+	display: flex;
+	padding-top: 2px; /* Es el espacio de relleno superior entre el contenido y el borde. */
+	padding-bottom: 7px; /* Es el espacio de relleno inferior entre el contenido y el borde. */
+	margin-left: -8px; /* Quito espaciado izquierdo.*/
+	bottom: 0;
+	margin-top: -5px; /* Establece la anchura del margen superior.*/
+	position: fixed;
+	justify-content: center;
+	font-family: Average; /* Tipo de letra */
+	color: #ffffff;
+}
+
