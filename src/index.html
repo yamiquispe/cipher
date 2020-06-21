@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cipher - PNP</title>
+    <meta name="description" content="Cifrado y descifrado de mensajes para personal de la PNP" />
+    <meta name="apple-mobile-web-app-title" content="Cipher">
+    <meta name="application-name" content="Cipher">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="manifest" href="">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet"> 
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style/css/style.css">
+
+    <title>Cipher | PNP</title>
 </head>
+
 <body>
-    <div id="root"></div>
-    <script src="router.js"></script>
+    <header>
+        <img src="assets/logo-text.png">
+        <ul>
+            <li><a href="#/encode">Cifrar</a></li>
+            <li><a href="#/decode">Descifrar</a></li>
+            <li><a href="#/instructions">Instrucciones</a></li>
+        </ul>
+    </header>
+    <main id="view"></main>
+    <footer role="contentinfo">
+        <p className="text-center text-black">
+            <small>Copyleft 🄯 | Cipher | PNP | 2020</small>
+        </p>
+    </footer>
+    <script src="controller/router.js"></script>
 </body>
+
 </html>
