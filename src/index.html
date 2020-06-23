@@ -14,7 +14,7 @@
     <link rel="manifest" href="">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
 
     <!-- Estilos -->
     <link rel="stylesheet" href="style/css/style.css">
@@ -24,20 +24,34 @@
 
 <body>
     <header>
-        <img src="assets/logo-text.png">
-        <ul>
-            <li><a href="#/encode">Cifrar</a></li>
-            <li><a href="#/decode">Descifrar</a></li>
-            <li><a href="#/instructions">Instrucciones</a></li>
-        </ul>
+        <div>
+            <img src="assets/menu.png" alt="menu hamburguer" id="icon-menu">
+            <img src="assets/logo-text.png" alt="logo cipher" id="logo-text">
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#/encode">Cifrar</a></li>
+                <li><a href="#/decode">Descifrar</a></li>
+                <li><a href="#/instructions">Instrucciones</a></li>
+            </ul>
+        </nav>
     </header>
-    <main id="view"></main>
+    <main id="view">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat repellat nesciunt deleniti maiores aut voluptate! Et, cumque veniam aliquid placeat sapiente dignissimos totam nostrum maxime sunt eveniet, assumenda rem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsa aperiam dolores consectetur expedita incidunt, ea natus quia possimus doloribus, optio in, cumque voluptatum delectus deleniti maxime dolore a inventore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias dolores obcaecati in vel corporis libero placeat! Quia eligendi optio aliquid iure. Ipsum error in aspernatur nemo. Distinctio, provident quam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum quae possimus temporibus fuga voluptates saepe odit molestias, eum, totam aliquam? Veniam ea, amet obcaecati doloremque similique nemo omnis non.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, doloremque eveniet suscipit ullam corrupti quaerat sequi in maiores maxime beatae similique provident quia iusto eaque. Error sed qui cupiditate perferendis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse doloribus possimus fugit praesentium iusto minus odio laborum deleniti ad consectetur, eos, ratione ullam assumenda magnam. Quia suscipit ducimus deserunt.
+        </p>
+    </main>
     <footer role="contentinfo">
         <p className="text-center text-black">
             <small>Copyleft 🄯 | Cipher | PNP | 2020</small>
         </p>
     </footer>
-    <script src="controller/router.js"></script>
+    <script src="controller/header.js"></script>
 </body>
 
 </html>

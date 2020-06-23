@@ -1,7 +1,305 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  background: #efefefff;
+  display: flex;
+  top: 0;
+  position: fixed;
+}
+header #icon-menu {
+  display: none;
+  cursor: pointer;
+}
+header #logo-text {
+  border-radius: 5px;
+  cursor: pointer;
+}
+header nav ul {
+  list-style: none;
+  /* display: flex; */
+  /* Por defecto, sitúa los elementos en fila */
+}
+header nav ul li {
+  cursor: pointer;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+header nav ul li:hover {
+  background: gray;
+  transition: all 1s;
+}
+header nav ul li:hover a {
+  color: white;
+}
+header .show {
+  display: block;
+}
+@media (max-width: 320px) {
+  header {
+    flex-direction: column;
+  }
+  header div {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header div #icon-menu {
+    width: 16%;
+    height: 45px;
+    display: flex;
+    margin-left: 3.2%;
+  }
+  header div #logo-text {
+    width: 50%;
+    height: 45px;
+    margin-right: 3.2%;
+  }
+  header nav {
+    width: 100%;
+    display: none;
+  }
+  header nav ul {
+    flex-direction: column;
+    margin: 0 0;
+    margin-left: -40px;
+  }
+  header nav ul li {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lemonchiffon;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  header div {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header div #icon-menu {
+    width: 14%;
+    height: 50px;
+    display: flex;
+    margin-left: 3.2%;
+  }
+  header div #logo-text {
+    width: 50%;
+    height: 50px;
+    margin-right: 3.2%;
+  }
+  header nav {
+    width: 100%;
+    display: none;
+  }
+  header nav ul {
+    flex-direction: column;
+    margin: 0 0;
+    margin-left: -40px;
+  }
+  header nav ul li {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lemonchiffon;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header div {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header div #icon-menu {
+    width: 10%;
+    height: 60px;
+    display: flex;
+    margin-left: 3.2%;
+  }
+  header div #logo-text {
+    width: 50%;
+    height: 60px;
+    margin-right: 3.2%;
+  }
+  header nav {
+    width: 100%;
+    display: none;
+  }
+  header nav ul {
+    flex-direction: column;
+    margin: 0 0;
+    margin-left: -40px;
+  }
+  header nav ul li {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lemonchiffon;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 82px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+  }
+  header div #icon-menu {
+    display: none;
+  }
+  header div #logo-text {
+    width: 100%;
+    height: 60px;
+  }
+  header nav {
+    width: 65%;
+    margin-right: 1%;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 0 3% 0 3%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  header {
+    height: 85px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+  }
+  header div #icon-menu {
+    display: none;
+  }
+  header div #logo-text {
+    width: 90%;
+    height: 60px;
+  }
+  header nav {
+    width: 55%;
+    margin-right: 1%;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 0 3% 0 3%;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    height: 88px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+  }
+  header div #icon-menu {
+    display: none;
+  }
+  header div #logo-text {
+    width: 80%;
+    height: 60px;
+  }
+  header nav {
+    width: 50%;
+    margin-right: 1%;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 0 3% 0 3%;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Athiti", sans-serif;
+}
+@media (max-width: 320px) {
+  body {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding-top: 80px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    padding-top: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    padding-top: 85px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
