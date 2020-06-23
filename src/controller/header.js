@@ -1,5 +1,5 @@
 
-const iconMenu = () => {
+export const header = () => {
     const iconMenu = document.getElementById('icon-menu');
     const headerHeight = document.getElementsByTagName('header')[0].offsetHeight;
     const menuNav = document.getElementsByTagName('nav')[0];
@@ -22,6 +22,4 @@ const iconMenu = () => {
             document.body.style.paddingTop = headerHeight.toString() + 'px';
         }
     });
-}
-
-iconMenu();
+};

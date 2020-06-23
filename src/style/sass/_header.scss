@@ -20,9 +20,13 @@ header {
         cursor: pointer;
     }
 
-    #logo-text {
-        border-radius: 5px;
-        cursor: pointer;
+    a {
+        outline: none;
+        
+        #logo-text {
+            border-radius: 5px;
+            cursor: pointer;
+        }
     }
 
     nav {

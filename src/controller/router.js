@@ -1,20 +1,24 @@
-import { components } from './view/index.js';
+import { views } from '../view/views.js';
 
-export const viewChange = (hash) => {
+
+export const router = (hash) => {
+
+  console.log(hash)
+
   const main = document.getElementById('view');
   main.innerHTML = '';
 
   switch (hash) {
     case '#/':
-      return main.appendChild(components);
-    case '#/iniciasesion':
-      return sectionMain.appendChild(components.login());
-    case '#/creacuenta':
-      return sectionMain.appendChild(components.createAccount());
-    case '#/home':
-      return sectionMain.appendChild(components.home());
+      return main.appendChild(views.encode());
+    case '#/encode':
+      return main.appendChild(views.encode());
+    case '#/decode':
+      return main.appendChild(views.decode());
+    case '#/instructions':
+      return main.appendChild(views.instructions());
     default:
-      return sectionMain.appendChild(components.different());
+      return main.appendChild(views.pageError());
   }
 };
 
@@ -35,5 +39,3 @@ export const initRouter = () => {
 }; */
 
 
-
-window.addEventListener('load', viewInitial);

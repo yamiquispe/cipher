@@ -10,7 +10,10 @@ header #icon-menu {
   display: none;
   cursor: pointer;
 }
-header #logo-text {
+header a {
+  outline: none;
+}
+header a #logo-text {
   border-radius: 5px;
   cursor: pointer;
 }
