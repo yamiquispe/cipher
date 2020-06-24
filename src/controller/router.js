@@ -1,16 +1,11 @@
 import { views } from '../view/views.js';
 
 
-export const router = (hash) => {
-
-  console.log(hash)
-
+const router = (hash) => {
   const main = document.getElementById('view');
   main.innerHTML = '';
 
   switch (hash) {
-    case '#/':
-      return main.appendChild(views.encode());
     case '#/encode':
       return main.appendChild(views.encode());
     case '#/decode':
@@ -23,19 +18,8 @@ export const router = (hash) => {
 };
 
 
-/* export const viewInitial = (hash) => {
-  if (hash === '#/' || hash === '' || hash === '#') return viewChange('#/iniciasesion');
+export const viewController = (hash) => {
+  if (hash === '#/' || hash === '' || hash === '#') return router('#/encode');
 
-  if (hash === '#/iniciasesion') return viewChange(hash);
-
-  return viewChange(hash);
+  return router(hash);
 };
-
-
-export const initRouter = () => {
-  window.addEventListener('load', viewInitial(window.location.hash));
-
-  if (('onhashchange' in window)) window.onhashchange = () => viewInitial(window.location.hash);
-}; */
-
-

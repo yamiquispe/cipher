@@ -1,14 +1,13 @@
 import { header } from './header.js';
-import { router } from './router.js';
+import { viewController } from './router.js';
 
 
 const hashChange = () => {
-  console.log('aquí gggggg');
-
-  router(window.location.hash);
+  // Muestra al cargar el documento la vista encode.
+  viewController(window.location.hash);
 
   // hashchange: Evento que se dispara al cambiar el hash de la URL.
-  window.addEventListener('hashchange', () => router(window.location.hash));
+  window.addEventListener('hashchange', () => viewController(window.location.hash));
 }
 
 
