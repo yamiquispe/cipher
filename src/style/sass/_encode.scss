@@ -1,6 +1,12 @@
 @import '_measures.scss';
 
 
+@mixin border($border, $borderRadius) {
+    border: $border;
+    border-radius: $borderRadius;
+}
+
+
 #view {
     width: 100%;
     padding: 0;
@@ -9,7 +15,6 @@
     justify-content: center;
 
     .content-view {
-        background: white;
 
         h1 {
             text-align: center;
@@ -17,12 +22,28 @@
 
         p {
             text-align: center;
+            margin-bottom: 25px;
         }
 
         .div-cipher {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            background: white;
+
+            label {
+                text-align: center;
+            }
+
+            input, textarea {
+                background: gainsboro;
+                border: 1px solid gray;
+                border-radius: 5px;
+            }
+
+            textarea {
+                resize: none;
+            }
 
             .div-buttons {
                 display: flex;
@@ -31,6 +52,7 @@
 
                 button {
                     cursor: pointer;
+                    background: #ffff8a;
                 }
             }
         }
@@ -45,61 +67,222 @@
 
             p {
                 font-size: 13px;
-                text-align: center;
             }
 
             .div-cipher {
-                border: 5px solid #6aa84f;
                 padding: 0 5% 0 5%;
-                border-radius: 8px;
-                background: white;
+                @include border(5px solid #6aa84f, 8px);
 
                 label {
                     font-size: 13px;
-                    text-align: center;
                     margin-top: 3%;
                 }
 
                 input {
                     height: 23px;
-                    border: 1px solid gray;
-                    border-radius: 5px;
-                    background: gainsboro;
-                }
-    
-                textarea {
-                    resize: none;
-                    border-radius: 5px;
-                    border: 1px solid gray;
-                    background: gainsboro;
                 }
     
                 button {
                     height: 25px;
-                    font-size: 11px;
+                    font-size: 10px;
                     margin: 0 2% 0 2%;
-                    background: #ffff8a;
-                    border: 2px solid #ff5;
-                    border-radius: 5px;
+                    @include border(2px solid #ff5, 5px);
                 }
+            }            
+        }
+
+        @media (min-width: $blackberry) and (max-width: $smartphone) {
+            width: 80%;
+            margin: 6% 0 9% 0;
+
+            h1 {
+                font-size: 16px;
             }
 
-            
+            p {
+                font-size: 13px;
+            }
+
+            .div-cipher {
+                padding: 0 5% 0 5%;
+                @include border(6px solid #6aa84f, 8px);
+
+                label {
+                    font-size: 13px;
+                    margin-top: 3%;
+                }
+
+                input {
+                    height: 23px;
+                }
+    
+                button {
+                    width: 43%;
+                    height: 25px;
+                    font-size: 11px;
+                    margin: 0 2% 0 2%;
+                    @include border(2px solid #ff5, 5px);
+                }
+            }            
         }
-        @media (min-width: $blackberry) and (max-width: $smartphone) {
-           
-        }
+
         @media (min-width: $smartphone) and (max-width: $tablet) {
-            
+            width: 70%;
+            margin: 5% 0 7% 0;
+
+            h1 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .div-cipher {
+                padding: 0 12% 0 12%;
+                @include border(7px solid #6aa84f, 8px);
+
+                label {
+                    font-size: 14px;
+                    margin-top: 3%;
+                }
+
+                input {
+                    height: 23px;
+                }
+
+                textarea {
+                    height: 50px;
+                }
+    
+                button {
+                    width: 45%;
+                    height: 30px;
+                    font-size: 12px;
+                    margin: 0 3% 0 3%;
+                    @include border(2px solid #ff5, 5px);
+                }
+            }            
         }
+
         @media (min-width: $tablet) and (max-width: $notebook) {
-            
+            width: 60%;
+            margin: 3% 0 6% 0;
+
+            h1 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .div-cipher {
+                padding: 0 12% 0 12%;
+                margin: 0 5% 0 5%;
+                @include border(8px solid #6aa84f, 8px);
+
+                label {
+                    font-size: 15px;
+                    margin-top: 3%;
+                }
+
+                input {
+                    height: 23px;
+                }
+
+                textarea {
+                    height: 55px;
+                }
+    
+                button {
+                    width: 40%;
+                    height: 35px;
+                    font-size: 13px;
+                    margin: 0 3% 0 3%;
+                    @include border(2px solid #ff5, 5px);
+                }
+            }            
         }
+
         @media (min-width: $notebook) and (max-width: $desktop) {
-           
+            width: 60%;
+            margin: 3% 0 5% 0;
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .div-cipher {
+                padding: 0 12% 0 12%;
+                margin: 0 7% 0 7%;
+                @include border(9px solid #6aa84f, 8px);
+
+                label {
+                    font-size: 16px;
+                    margin-top: 3%;
+                }
+
+                input {
+                    height: 23px;
+                }
+
+                textarea {
+                    height: 60px;
+                }
+    
+                button {
+                    width: 37.5%;
+                    height: 40px;
+                    font-size: 14px;
+                    margin: 0 3% 0 3%;
+                    @include border(3px solid #ff5, 5px);
+                }
+            }          
         }
+
         @media (min-width: $desktop) {
-           
+            width: 65%;
+            margin: 3% 0 5% 0;
+
+            h1 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            .div-cipher {
+                padding: 0 12% 0 12%;
+                margin: 0 12% 0 12%;
+                @include border(10px solid #6aa84f, 8px);
+
+                label {
+                    font-size: 17px;
+                    margin-top: 3%;
+                }
+
+                input {
+                    height: 23px;
+                }
+
+                textarea {
+                    height: 65px;
+                }
+    
+                button {
+                    width: 35%;
+                    height: 45px;
+                    font-size: 14px;
+                    margin: 0 3% 0 3%;
+                    @include border(4px solid #ff5, 5px);
+                }
+            }        
         }
     }
 }

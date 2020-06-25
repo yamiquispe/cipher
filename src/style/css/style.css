@@ -358,19 +358,29 @@ footer p {
   display: flex;
   justify-content: center;
 }
-#view .content-view {
-  background: white;
-}
 #view .content-view h1 {
   text-align: center;
 }
 #view .content-view p {
   text-align: center;
+  margin-bottom: 25px;
 }
 #view .content-view .div-cipher {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: white;
+}
+#view .content-view .div-cipher label {
+  text-align: center;
+}
+#view .content-view .div-cipher input, #view .content-view .div-cipher textarea {
+  background: gainsboro;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+#view .content-view .div-cipher textarea {
+  resize: none;
 }
 #view .content-view .div-cipher .div-buttons {
   display: flex;
@@ -379,6 +389,7 @@ footer p {
 }
 #view .content-view .div-cipher .div-buttons button {
   cursor: pointer;
+  background: #ffff8a;
 }
 @media (max-width: 320px) {
   #view .content-view {
@@ -390,40 +401,203 @@ footer p {
   }
   #view .content-view p {
     font-size: 13px;
-    text-align: center;
   }
   #view .content-view .div-cipher {
-    border: 5px solid #6aa84f;
     padding: 0 5% 0 5%;
+    border: 5px solid #6aa84f;
     border-radius: 8px;
-    background: white;
   }
   #view .content-view .div-cipher label {
     font-size: 13px;
-    text-align: center;
     margin-top: 3%;
   }
   #view .content-view .div-cipher input {
     height: 23px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    background: gainsboro;
-  }
-  #view .content-view .div-cipher textarea {
-    resize: none;
-    border-radius: 5px;
-    border: 1px solid gray;
-    background: gainsboro;
   }
   #view .content-view .div-cipher button {
     height: 25px;
-    font-size: 11px;
+    font-size: 10px;
     margin: 0 2% 0 2%;
-    background: #ffff8a;
     border: 2px solid #ff5;
     border-radius: 5px;
   }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  #view .content-view {
+    width: 80%;
+    margin: 6% 0 9% 0;
+  }
+  #view .content-view h1 {
+    font-size: 16px;
+  }
+  #view .content-view p {
+    font-size: 13px;
+  }
+  #view .content-view .div-cipher {
+    padding: 0 5% 0 5%;
+    border: 6px solid #6aa84f;
+    border-radius: 8px;
+  }
+  #view .content-view .div-cipher label {
+    font-size: 13px;
+    margin-top: 3%;
+  }
+  #view .content-view .div-cipher input {
+    height: 23px;
+  }
+  #view .content-view .div-cipher button {
+    width: 43%;
+    height: 25px;
+    font-size: 11px;
+    margin: 0 2% 0 2%;
+    border: 2px solid #ff5;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #view .content-view {
+    width: 70%;
+    margin: 5% 0 7% 0;
+  }
+  #view .content-view h1 {
+    font-size: 18px;
+  }
+  #view .content-view p {
+    font-size: 14px;
+  }
+  #view .content-view .div-cipher {
+    padding: 0 12% 0 12%;
+    border: 7px solid #6aa84f;
+    border-radius: 8px;
+  }
+  #view .content-view .div-cipher label {
+    font-size: 14px;
+    margin-top: 3%;
+  }
+  #view .content-view .div-cipher input {
+    height: 23px;
+  }
+  #view .content-view .div-cipher textarea {
+    height: 50px;
+  }
+  #view .content-view .div-cipher button {
+    width: 45%;
+    height: 30px;
+    font-size: 12px;
+    margin: 0 3% 0 3%;
+    border: 2px solid #ff5;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #view .content-view {
+    width: 60%;
+    margin: 3% 0 6% 0;
+  }
+  #view .content-view h1 {
+    font-size: 22px;
+  }
+  #view .content-view p {
+    font-size: 15px;
+  }
+  #view .content-view .div-cipher {
+    padding: 0 12% 0 12%;
+    margin: 0 5% 0 5%;
+    border: 8px solid #6aa84f;
+    border-radius: 8px;
+  }
+  #view .content-view .div-cipher label {
+    font-size: 15px;
+    margin-top: 3%;
+  }
+  #view .content-view .div-cipher input {
+    height: 23px;
+  }
+  #view .content-view .div-cipher textarea {
+    height: 55px;
+  }
+  #view .content-view .div-cipher button {
+    width: 40%;
+    height: 35px;
+    font-size: 13px;
+    margin: 0 3% 0 3%;
+    border: 2px solid #ff5;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #view .content-view {
+    width: 60%;
+    margin: 3% 0 5% 0;
+  }
+  #view .content-view h1 {
+    font-size: 24px;
+  }
+  #view .content-view p {
+    font-size: 16px;
+  }
+  #view .content-view .div-cipher {
+    padding: 0 12% 0 12%;
+    margin: 0 7% 0 7%;
+    border: 9px solid #6aa84f;
+    border-radius: 8px;
+  }
+  #view .content-view .div-cipher label {
+    font-size: 16px;
+    margin-top: 3%;
+  }
+  #view .content-view .div-cipher input {
+    height: 23px;
+  }
+  #view .content-view .div-cipher textarea {
+    height: 60px;
+  }
+  #view .content-view .div-cipher button {
+    width: 37.5%;
+    height: 40px;
+    font-size: 14px;
+    margin: 0 3% 0 3%;
+    border: 3px solid #ff5;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  #view .content-view {
+    width: 65%;
+    margin: 3% 0 5% 0;
+  }
+  #view .content-view h1 {
+    font-size: 26px;
+  }
+  #view .content-view p {
+    font-size: 17px;
+  }
+  #view .content-view .div-cipher {
+    padding: 0 12% 0 12%;
+    margin: 0 12% 0 12%;
+    border: 10px solid #6aa84f;
+    border-radius: 8px;
+  }
+  #view .content-view .div-cipher label {
+    font-size: 17px;
+    margin-top: 3%;
+  }
+  #view .content-view .div-cipher input {
+    height: 23px;
+  }
+  #view .content-view .div-cipher textarea {
+    height: 65px;
+  }
+  #view .content-view .div-cipher button {
+    width: 35%;
+    height: 45px;
+    font-size: 14px;
+    margin: 0 3% 0 3%;
+    border: 4px solid #ff5;
+    border-radius: 5px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
