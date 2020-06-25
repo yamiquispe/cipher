@@ -1,9 +1,8 @@
 @import '_measures.scss';
 
 
-@mixin style($padding, $size) {
-    padding: $padding;
-    margin: 0;
+@mixin style($height, $size) {
+    height: $height;
     font-size: $size;
 }
 
@@ -16,34 +15,31 @@ footer {
     background: #444444ff;
     color: white;
 
+    p {
+        text-align: center;
+    }
+
     @media (max-width: $blackberry) {
-        // @include style(5px 6% 5px 6%, 13px);
-        height: 40px;
-        font-size: 14px;
+        height: 45px;
+
+        p {
+            margin: 0 5% 0 5%;
+            font-size: 13px;
+        }
     }
     @media (min-width: $blackberry) and (max-width: $smartphone) {
-        // @include style(6px 8% 6px 8%, 14px);
-        height: 42.5px;
-        font-size: 15px;
+        @include style(45px, 15px);
     }
     @media (min-width: $smartphone) and (max-width: $tablet) {
-        // @include style(7px 10% 7px 10%, 16px);
-        height: 45px;
-        font-size: 16px;
+        @include style(45px, 16px);
     }
     @media (min-width: $tablet) and (max-width: $notebook) {
-        // @include style(8px 12% 8px 12%, 18px);
-        height: 47.5px;
-        font-size: 17px;
+        @include style(47.5px, 17px);
     }
     @media (min-width: $notebook) and (max-width: $desktop) {
-        // @include style(9px 14% 9px 14%, 20px);
-        height: 50px;
-        font-size: 18px;
+        @include style(50px, 18px);
     }
     @media (min-width: $desktop) {
-        // @include style(10px 16% 10px 16%, 21px);
-        height: 52.5px;
-        font-size: 19px;
+        @include style(52.5px, 19px);
     }
 }

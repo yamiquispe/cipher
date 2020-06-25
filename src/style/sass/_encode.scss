@@ -1,0 +1,105 @@
+@import '_measures.scss';
+
+
+#view {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    .content-view {
+        background: white;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .div-cipher {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .div-buttons {
+                display: flex;
+                justify-content: center;
+                margin: 5% 0 5% 0;
+
+                button {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        @media (max-width: $blackberry) {
+            width: 80%;
+            margin: 3% 0 8% 0;
+
+            h1 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 13px;
+                text-align: center;
+            }
+
+            .div-cipher {
+                border: 5px solid #6aa84f;
+                padding: 0 5% 0 5%;
+                border-radius: 8px;
+                background: white;
+
+                label {
+                    font-size: 13px;
+                    text-align: center;
+                    margin-top: 3%;
+                }
+
+                input {
+                    height: 23px;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    background: gainsboro;
+                }
+    
+                textarea {
+                    resize: none;
+                    border-radius: 5px;
+                    border: 1px solid gray;
+                    background: gainsboro;
+                }
+    
+                button {
+                    height: 25px;
+                    font-size: 11px;
+                    margin: 0 2% 0 2%;
+                    background: #ffff8a;
+                    border: 2px solid #ff5;
+                    border-radius: 5px;
+                }
+            }
+
+            
+        }
+        @media (min-width: $blackberry) and (max-width: $smartphone) {
+           
+        }
+        @media (min-width: $smartphone) and (max-width: $tablet) {
+            
+        }
+        @media (min-width: $tablet) and (max-width: $notebook) {
+            
+        }
+        @media (min-width: $notebook) and (max-width: $desktop) {
+           
+        }
+        @media (min-width: $desktop) {
+           
+        }
+    }
+}
