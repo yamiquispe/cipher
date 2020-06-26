@@ -23,7 +23,7 @@ const decode = () => {
     `;
 
     const sectionView = document.createElement('section');
-    sectionView.className = 'content-view';
+    sectionView.className = 'content-view-encode-decode';
     sectionView.innerHTML = view;
 
     return sectionView;

@@ -1,0 +1,101 @@
+@import '_measures.scss';
+
+
+@mixin style($height, $size) {
+    height: $height;
+    font-size: $size;
+}
+
+
+#view {
+    
+    .content-view-error {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    /*     background: #fbfba5;
+        border: 5px solid #ffff6b;
+        border-radius: 10px; */
+
+        p {
+            font-weight: bold;
+        }
+
+        img {
+            margin-bottom: 2%;
+        }
+
+        @media (max-width: $blackberry) {
+            width: 80%;
+            height: 300px;
+            margin: 6% 6%;
+            padding: 3% 0 3% 0;
+
+            img {
+                width: 90%;
+                border-radius: 5px;
+                
+            }
+        }
+
+        @media (min-width: $blackberry) and (max-width: $smartphone) {
+            width: 70%;
+            height: 320px;
+            margin: 8% 8%;
+            padding: 2% 0 2% 0;
+
+            img {
+                width: 80%;
+                border-radius: 5px;
+            }
+        }
+
+        @media (min-width: $smartphone) and (max-width: $tablet) {
+            width: 60%;
+            height: 340px;
+            margin: 10% 10%;
+            padding: 2% 0 2% 0;
+
+            img {
+                width: 70%;
+                border-radius: 5px;
+            }
+        }
+
+        @media (min-width: $tablet) and (max-width: $notebook) {
+            width: 50%;
+            height: 360px;
+            margin: 7% 7%;
+            padding: 2% 0 2% 0;
+
+            img {
+                width: 65%;
+                border-radius: 5px;
+            }
+        }
+
+        @media (min-width: $notebook) and (max-width: $desktop) {
+            width: 40%;
+            height: 380;
+            margin: 4% 4%;
+            padding: 2% 0 2% 0;
+
+            img {
+                width: 70%;
+                border-radius: 5px;
+            }
+        }
+
+        @media (min-width: $desktop) {
+            width: 35%;
+            height: 400px;
+            margin: 2% 2%;
+            padding: 1% 0 1% 0;
+
+            img {
+                width: 80%;
+                border-radius: 5px;
+            }
+        }
+    }
+}

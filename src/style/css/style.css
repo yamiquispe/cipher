@@ -351,70 +351,56 @@ footer p {
   }
 }
 
-#view {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+#view .content-view-encode-decode {
+  flex-direction: column;
 }
-#view .content-view h1 {
-  text-align: center;
-}
-#view .content-view p {
-  text-align: center;
+#view .content-view-encode-decode p {
   margin-bottom: 25px;
 }
-#view .content-view .div-cipher {
+#view .content-view-encode-decode .div-cipher {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: white;
 }
-#view .content-view .div-cipher label {
+#view .content-view-encode-decode .div-cipher label {
   text-align: center;
 }
-#view .content-view .div-cipher input, #view .content-view .div-cipher textarea {
+#view .content-view-encode-decode .div-cipher input, #view .content-view-encode-decode .div-cipher textarea {
   background: gainsboro;
   border: 1px solid gray;
   border-radius: 5px;
 }
-#view .content-view .div-cipher textarea {
+#view .content-view-encode-decode .div-cipher textarea {
   resize: none;
 }
-#view .content-view .div-cipher .div-buttons {
+#view .content-view-encode-decode .div-cipher .div-buttons {
   display: flex;
   justify-content: center;
   margin: 5% 0 5% 0;
 }
-#view .content-view .div-cipher .div-buttons button {
+#view .content-view-encode-decode .div-cipher .div-buttons button {
   cursor: pointer;
   background: #ffff8a;
 }
 @media (max-width: 320px) {
-  #view .content-view {
+  #view .content-view-encode-decode {
     width: 80%;
     margin: 3% 0 8% 0;
   }
-  #view .content-view h1 {
-    font-size: 16px;
-  }
-  #view .content-view p {
-    font-size: 13px;
-  }
-  #view .content-view .div-cipher {
+  #view .content-view-encode-decode .div-cipher {
     padding: 0 5% 0 5%;
     border: 5px solid #6aa84f;
     border-radius: 8px;
   }
-  #view .content-view .div-cipher label {
+  #view .content-view-encode-decode .div-cipher label {
     font-size: 13px;
     margin-top: 3%;
   }
-  #view .content-view .div-cipher input {
+  #view .content-view-encode-decode .div-cipher input {
     height: 23px;
   }
-  #view .content-view .div-cipher button {
+  #view .content-view-encode-decode .div-cipher button {
     height: 25px;
     font-size: 10px;
     margin: 0 2% 0 2%;
@@ -423,29 +409,23 @@ footer p {
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  #view .content-view {
+  #view .content-view-encode-decode {
     width: 80%;
     margin: 6% 0 9% 0;
   }
-  #view .content-view h1 {
-    font-size: 16px;
-  }
-  #view .content-view p {
-    font-size: 13px;
-  }
-  #view .content-view .div-cipher {
+  #view .content-view-encode-decode .div-cipher {
     padding: 0 5% 0 5%;
     border: 6px solid #6aa84f;
     border-radius: 8px;
   }
-  #view .content-view .div-cipher label {
+  #view .content-view-encode-decode .div-cipher label {
     font-size: 13px;
     margin-top: 3%;
   }
-  #view .content-view .div-cipher input {
+  #view .content-view-encode-decode .div-cipher input {
     height: 23px;
   }
-  #view .content-view .div-cipher button {
+  #view .content-view-encode-decode .div-cipher button {
     width: 43%;
     height: 25px;
     font-size: 11px;
@@ -455,32 +435,26 @@ footer p {
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  #view .content-view {
+  #view .content-view-encode-decode {
     width: 70%;
     margin: 5% 0 7% 0;
   }
-  #view .content-view h1 {
-    font-size: 18px;
-  }
-  #view .content-view p {
-    font-size: 14px;
-  }
-  #view .content-view .div-cipher {
+  #view .content-view-encode-decode .div-cipher {
     padding: 0 12% 0 12%;
     border: 7px solid #6aa84f;
     border-radius: 8px;
   }
-  #view .content-view .div-cipher label {
+  #view .content-view-encode-decode .div-cipher label {
     font-size: 14px;
     margin-top: 3%;
   }
-  #view .content-view .div-cipher input {
+  #view .content-view-encode-decode .div-cipher input {
     height: 23px;
   }
-  #view .content-view .div-cipher textarea {
+  #view .content-view-encode-decode .div-cipher textarea {
     height: 50px;
   }
-  #view .content-view .div-cipher button {
+  #view .content-view-encode-decode .div-cipher button {
     width: 45%;
     height: 30px;
     font-size: 12px;
@@ -490,33 +464,27 @@ footer p {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  #view .content-view {
+  #view .content-view-encode-decode {
     width: 60%;
     margin: 3% 0 6% 0;
   }
-  #view .content-view h1 {
-    font-size: 22px;
-  }
-  #view .content-view p {
-    font-size: 15px;
-  }
-  #view .content-view .div-cipher {
+  #view .content-view-encode-decode .div-cipher {
     padding: 0 12% 0 12%;
     margin: 0 5% 0 5%;
     border: 8px solid #6aa84f;
     border-radius: 8px;
   }
-  #view .content-view .div-cipher label {
+  #view .content-view-encode-decode .div-cipher label {
     font-size: 15px;
     margin-top: 3%;
   }
-  #view .content-view .div-cipher input {
+  #view .content-view-encode-decode .div-cipher input {
     height: 23px;
   }
-  #view .content-view .div-cipher textarea {
+  #view .content-view-encode-decode .div-cipher textarea {
     height: 55px;
   }
-  #view .content-view .div-cipher button {
+  #view .content-view-encode-decode .div-cipher button {
     width: 40%;
     height: 35px;
     font-size: 13px;
@@ -526,33 +494,27 @@ footer p {
   }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
-  #view .content-view {
+  #view .content-view-encode-decode {
     width: 60%;
     margin: 3% 0 5% 0;
   }
-  #view .content-view h1 {
-    font-size: 24px;
-  }
-  #view .content-view p {
-    font-size: 16px;
-  }
-  #view .content-view .div-cipher {
+  #view .content-view-encode-decode .div-cipher {
     padding: 0 12% 0 12%;
     margin: 0 7% 0 7%;
     border: 9px solid #6aa84f;
     border-radius: 8px;
   }
-  #view .content-view .div-cipher label {
+  #view .content-view-encode-decode .div-cipher label {
     font-size: 16px;
     margin-top: 3%;
   }
-  #view .content-view .div-cipher input {
+  #view .content-view-encode-decode .div-cipher input {
     height: 23px;
   }
-  #view .content-view .div-cipher textarea {
+  #view .content-view-encode-decode .div-cipher textarea {
     height: 60px;
   }
-  #view .content-view .div-cipher button {
+  #view .content-view-encode-decode .div-cipher button {
     width: 37.5%;
     height: 40px;
     font-size: 14px;
@@ -562,38 +524,119 @@ footer p {
   }
 }
 @media (min-width: 1200px) {
-  #view .content-view {
+  #view .content-view-encode-decode {
     width: 65%;
     margin: 3% 0 5% 0;
   }
-  #view .content-view h1 {
-    font-size: 26px;
-  }
-  #view .content-view p {
-    font-size: 17px;
-  }
-  #view .content-view .div-cipher {
+  #view .content-view-encode-decode .div-cipher {
     padding: 0 12% 0 12%;
     margin: 0 12% 0 12%;
     border: 10px solid #6aa84f;
     border-radius: 8px;
   }
-  #view .content-view .div-cipher label {
+  #view .content-view-encode-decode .div-cipher label {
     font-size: 17px;
     margin-top: 3%;
   }
-  #view .content-view .div-cipher input {
+  #view .content-view-encode-decode .div-cipher input {
     height: 23px;
   }
-  #view .content-view .div-cipher textarea {
+  #view .content-view-encode-decode .div-cipher textarea {
     height: 65px;
   }
-  #view .content-view .div-cipher button {
+  #view .content-view-encode-decode .div-cipher button {
     width: 35%;
     height: 45px;
     font-size: 14px;
     margin: 0 3% 0 3%;
     border: 4px solid #ff5;
+    border-radius: 5px;
+  }
+}
+
+#view .content-view-error {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*     background: #fbfba5;
+      border: 5px solid #ffff6b;
+      border-radius: 10px; */
+}
+#view .content-view-error p {
+  font-weight: bold;
+}
+#view .content-view-error img {
+  margin-bottom: 2%;
+}
+@media (max-width: 320px) {
+  #view .content-view-error {
+    width: 80%;
+    height: 300px;
+    margin: 6% 6%;
+    padding: 3% 0 3% 0;
+  }
+  #view .content-view-error img {
+    width: 90%;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #view .content-view-error {
+    width: 70%;
+    height: 320px;
+    margin: 8% 8%;
+    padding: 2% 0 2% 0;
+  }
+  #view .content-view-error img {
+    width: 80%;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #view .content-view-error {
+    width: 60%;
+    height: 340px;
+    margin: 10% 10%;
+    padding: 2% 0 2% 0;
+  }
+  #view .content-view-error img {
+    width: 70%;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #view .content-view-error {
+    width: 50%;
+    height: 360px;
+    margin: 7% 7%;
+    padding: 2% 0 2% 0;
+  }
+  #view .content-view-error img {
+    width: 65%;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #view .content-view-error {
+    width: 40%;
+    height: 380;
+    margin: 4% 4%;
+    padding: 2% 0 2% 0;
+  }
+  #view .content-view-error img {
+    width: 70%;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  #view .content-view-error {
+    width: 35%;
+    height: 400px;
+    margin: 2% 2%;
+    padding: 1% 0 1% 0;
+  }
+  #view .content-view-error img {
+    width: 80%;
     border-radius: 5px;
   }
 }
@@ -604,34 +647,91 @@ body {
   font-family: "Athiti", sans-serif;
   background: #c7f3b3ff;
 }
+body #view {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* View Encode & Decode */
+  /* View Error */
+}
+body #view h1 {
+  text-align: center;
+}
+body #view p {
+  text-align: center;
+}
+body #view .content-view-encode-decode {
+  display: flex;
+}
+body #view .content-view-error {
+  display: flex;
+}
 @media (max-width: 320px) {
   body {
     padding-top: 60px;
+  }
+  body h1 {
+    font-size: 16px;
+  }
+  body p {
+    font-size: 13px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body {
     padding-top: 60px;
   }
+  body h1 {
+    font-size: 16px;
+  }
+  body p {
+    font-size: 13px;
+  }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   body {
     padding-top: 70px;
+  }
+  body h1 {
+    font-size: 18px;
+  }
+  body p {
+    font-size: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     padding-top: 80px;
   }
+  body h1 {
+    font-size: 22px;
+  }
+  body p {
+    font-size: 15px;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
   body {
     padding-top: 80px;
   }
+  body h1 {
+    font-size: 24px;
+  }
+  body p {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1200px) {
   body {
     padding-top: 85px;
+  }
+  body h1 {
+    font-size: 26px;
+  }
+  body p {
+    font-size: 17px;
   }
 }
 

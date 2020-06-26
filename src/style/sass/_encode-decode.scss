@@ -8,20 +8,11 @@
 
 
 #view {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-
-    .content-view {
-
-        h1 {
-            text-align: center;
-        }
+   
+    .content-view-encode-decode {
+        flex-direction: column;
 
         p {
-            text-align: center;
             margin-bottom: 25px;
         }
 
@@ -61,14 +52,6 @@
             width: 80%;
             margin: 3% 0 8% 0;
 
-            h1 {
-                font-size: 16px;
-            }
-
-            p {
-                font-size: 13px;
-            }
-
             .div-cipher {
                 padding: 0 5% 0 5%;
                 @include border(5px solid #6aa84f, 8px);
@@ -94,14 +77,6 @@
         @media (min-width: $blackberry) and (max-width: $smartphone) {
             width: 80%;
             margin: 6% 0 9% 0;
-
-            h1 {
-                font-size: 16px;
-            }
-
-            p {
-                font-size: 13px;
-            }
 
             .div-cipher {
                 padding: 0 5% 0 5%;
@@ -129,14 +104,6 @@
         @media (min-width: $smartphone) and (max-width: $tablet) {
             width: 70%;
             margin: 5% 0 7% 0;
-
-            h1 {
-                font-size: 18px;
-            }
-
-            p {
-                font-size: 14px;
-            }
 
             .div-cipher {
                 padding: 0 12% 0 12%;
@@ -168,14 +135,6 @@
         @media (min-width: $tablet) and (max-width: $notebook) {
             width: 60%;
             margin: 3% 0 6% 0;
-
-            h1 {
-                font-size: 22px;
-            }
-
-            p {
-                font-size: 15px;
-            }
 
             .div-cipher {
                 padding: 0 12% 0 12%;
@@ -209,14 +168,6 @@
             width: 60%;
             margin: 3% 0 5% 0;
 
-            h1 {
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 16px;
-            }
-
             .div-cipher {
                 padding: 0 12% 0 12%;
                 margin: 0 7% 0 7%;
@@ -248,14 +199,6 @@
         @media (min-width: $desktop) {
             width: 65%;
             margin: 3% 0 5% 0;
-
-            h1 {
-                font-size: 26px;
-            }
-
-            p {
-                font-size: 17px;
-            }
 
             .div-cipher {
                 padding: 0 12% 0 12%;

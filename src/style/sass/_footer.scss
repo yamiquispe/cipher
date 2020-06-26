@@ -27,18 +27,23 @@ footer {
             font-size: 13px;
         }
     }
+
     @media (min-width: $blackberry) and (max-width: $smartphone) {
         @include style(45px, 15px);
     }
+
     @media (min-width: $smartphone) and (max-width: $tablet) {
         @include style(45px, 16px);
     }
+
     @media (min-width: $tablet) and (max-width: $notebook) {
         @include style(47.5px, 17px);
     }
+
     @media (min-width: $notebook) and (max-width: $desktop) {
         @include style(50px, 18px);
     }
+    
     @media (min-width: $desktop) {
         @include style(52.5px, 19px);
     }
