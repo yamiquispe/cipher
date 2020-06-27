@@ -1,7 +1,7 @@
 
 const instructions = () => {
     const view = `
-    <div>
+    <div id="container-description-web">
         <h2>Instrucciones</h2>
         <p>
             En criptografía, el cifrado César, es un tipo de cifrado por sustitución en el que 
@@ -9,7 +9,7 @@ const instructions = () => {
             número fijo de posiciones más adelante en el alfabeto. 
         </p>
     </div> 
-    <div>
+    <div id="container-instructions">
         <section>
             <h2>Para cifrar:</h2>
             <div>

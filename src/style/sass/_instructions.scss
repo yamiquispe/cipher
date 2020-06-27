@@ -1,0 +1,93 @@
+@import '_measures.scss';
+
+
+@mixin style($height, $size) {
+    height: $height;
+    font-size: $size;
+}
+
+
+#view {
+    
+    .content-view-instructions {
+        flex-direction: column;
+        justify-content: center;
+
+        #container-description-web {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: aqua;
+        }
+
+        #container-instructions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: orange;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background: gray;
+                }
+            }
+        }
+
+        @media (max-width: $blackberry) {
+            width: 90%;
+
+            #container-description-web {
+                width: 100%;
+                
+            }
+
+            #container-instructions {
+                width: 100%;
+                
+                section {
+                    width: 80%;
+    
+                    div {
+                        
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        @media (min-width: $blackberry) and (max-width: $smartphone) {
+            /* @include style(45px, 15px); */
+        }
+    
+        @media (min-width: $smartphone) and (max-width: $tablet) {
+            /* @include style(45px, 16px); */
+        }
+    
+        @media (min-width: $tablet) and (max-width: $notebook) {
+           /*  @include style(47.5px, 17px); */
+        }
+    
+        @media (min-width: $notebook) and (max-width: $desktop) {
+            /* @include style(50px, 18px); */
+        }
+        
+        @media (min-width: $desktop) {
+           /*  @include style(52.5px, 19px); */
+        }
+    }
+}
