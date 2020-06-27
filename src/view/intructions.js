@@ -13,17 +13,20 @@ const instructions = () => {
         <section>
             <h2>Para cifrar:</h2>
             <div>
+                <img src="./assets/one.png" alt="">
                 <p>
                     Indique el número de posiciones a desplazar.
                 </p>
             </div>
             <div>
+                <img src="./assets/two.png" alt="">
                 <p>
                     Escriba el mensaje que desea cifrar y presione el botón
                     "Cifrar mensaje".
                 </p>
             </div>
             <div>
+                <img src="./assets/three.png" alt="">
                 <p>
                     Se mostrará un modal con el mensaje cifrado.
                 </p>
@@ -32,17 +35,20 @@ const instructions = () => {
         <section>
             <h2>Para descifrar:</h2>
             <div>
+                <img src="./assets/one.png" alt="">
                 <p>
                     Indique el número de posiciones de desplazamiento.
                 </p>
             </div>
             <div>
+                <img src="./assets/two.png" alt="">
                 <p>
                     Escriba el mensaje que desea descifrar y presione el botón
                     "Descifrar mensaje".
                 </p>
             </div>
             <div>
+                <img src="./assets/three.png" alt="">
                 <p>
                     Se mostrará un modal con el mensaje descifrado.
                 </p>
@@ -52,6 +58,7 @@ const instructions = () => {
     `;
 
     const sectionView = document.createElement('section');
+    sectionView.className = 'content-view-instructions';
     sectionView.innerHTML = view;
 
     return sectionView;

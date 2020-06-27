@@ -2,12 +2,14 @@
 
 const pageError = () => {
     const view = `
-    <h1>ERROR - Página no encontraba</h1>
+    <div>
+        <h1>¡ERROR!</h1>
+        <p>
+            Lo sentimos, no hemos podido encontrar el contenido solicitado.
+            Inténtalo nuevamente.
+        </p>
+    </div>
     <img src="./assets/404.gif" alt="404">
-    <p>
-        Lo sentimos, no hemos podido encontrar el contenido solicitado.
-        Inténtalo nuevamente.
-    </p>
     `;
 
     const sectionView = document.createElement('section');

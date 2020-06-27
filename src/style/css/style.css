@@ -555,88 +555,150 @@ footer p {
 }
 
 #view .content-view-error {
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*     background: #fbfba5;
-      border: 5px solid #ffff6b;
-      border-radius: 10px; */
 }
-#view .content-view-error p {
+#view .content-view-error div {
+  display: flex;
+  flex-direction: column;
+}
+#view .content-view-error div h1 {
+  font-family: "Bungee Inline", cursive;
+  color: #35ff89;
+  text-shadow: 0 0 1px #00AF80, -1px -1px 0 #00AF80, 1px -1px 0 #00AF80, -1px 1px 0 #00AF80, 1px 1px 0 #00AF80;
+}
+#view .content-view-error div p {
   font-weight: bold;
-}
-#view .content-view-error img {
-  margin-bottom: 2%;
 }
 @media (max-width: 320px) {
   #view .content-view-error {
     width: 80%;
     height: 300px;
+    flex-direction: column;
     margin: 6% 6%;
     padding: 3% 0 3% 0;
+  }
+  #view .content-view-error h1 {
+    font-size: 22px;
+  }
+  #view .content-view-error p {
+    margin-top: -3%;
   }
   #view .content-view-error img {
     width: 90%;
     border-radius: 5px;
+    margin: 5% 5%;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   #view .content-view-error {
-    width: 70%;
+    width: 75%;
     height: 320px;
-    margin: 8% 8%;
+    flex-direction: column;
+    margin: 10% 10%;
     padding: 2% 0 2% 0;
   }
+  #view .content-view-error h1 {
+    font-size: 26px;
+  }
+  #view .content-view-error p {
+    margin-top: -3%;
+  }
   #view .content-view-error img {
-    width: 80%;
     border-radius: 5px;
+    margin: 5% 5%;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   #view .content-view-error {
-    width: 60%;
+    width: 85%;
     height: 340px;
-    margin: 10% 10%;
+    flex-direction: row-reverse;
+    margin: 11% 11%;
     padding: 2% 0 2% 0;
   }
+  #view .content-view-error div {
+    width: 45%;
+    margin: 0 0 0 4%;
+  }
+  #view .content-view-error div h1 {
+    font-size: 30px;
+    margin-top: 2%;
+  }
+  #view .content-view-error div p {
+    margin-top: -7%;
+  }
   #view .content-view-error img {
-    width: 70%;
     border-radius: 5px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #view .content-view-error {
-    width: 50%;
+    width: 80%;
     height: 360px;
+    flex-direction: row-reverse;
     margin: 7% 7%;
     padding: 2% 0 2% 0;
   }
+  #view .content-view-error div {
+    width: 50%;
+    margin: 0 0 0 7%;
+  }
+  #view .content-view-error div h1 {
+    font-size: 50px;
+    margin-top: 2%;
+  }
+  #view .content-view-error div p {
+    margin-top: -7%;
+  }
   #view .content-view-error img {
-    width: 65%;
     border-radius: 5px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
   #view .content-view-error {
-    width: 40%;
+    width: 70%;
     height: 380;
-    margin: 4% 4%;
-    padding: 2% 0 2% 0;
+    flex-direction: row-reverse;
+    margin: 7% 7%;
+    padding: 5% 0 5% 0;
+  }
+  #view .content-view-error div {
+    width: 40%;
+    margin: 0 0 0 7%;
+  }
+  #view .content-view-error div h1 {
+    font-size: 70px;
+    margin-top: 2%;
+  }
+  #view .content-view-error div p {
+    margin-top: -10%;
   }
   #view .content-view-error img {
-    width: 70%;
     border-radius: 5px;
   }
 }
 @media (min-width: 1200px) {
   #view .content-view-error {
-    width: 35%;
+    width: 90%;
     height: 400px;
-    margin: 2% 2%;
-    padding: 1% 0 1% 0;
+    flex-direction: row-reverse;
+    margin: 4% 4%;
+    padding: 0 0 0 0;
+  }
+  #view .content-view-error div {
+    width: 35%;
+    margin: 0 0 0 5%;
+  }
+  #view .content-view-error div h1 {
+    font-size: 80px;
+    margin-top: 2%;
+  }
+  #view .content-view-error div p {
+    margin-top: -10%;
   }
   #view .content-view-error img {
-    width: 80%;
+    width: 38%;
     border-radius: 5px;
   }
 }
@@ -649,12 +711,10 @@ body {
 }
 body #view {
   width: 100%;
-  padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  /* View Encode & Decode */
-  /* View Error */
+  /* View Encode & Decode and View Error */
 }
 body #view h1 {
   text-align: center;
@@ -662,76 +722,73 @@ body #view h1 {
 body #view p {
   text-align: center;
 }
-body #view .content-view-encode-decode {
-  display: flex;
-}
-body #view .content-view-error {
+body #view .content-view-encode-decode, body #view .content-view-instructions, body #view .content-view-error {
   display: flex;
 }
 @media (max-width: 320px) {
   body {
     padding-top: 60px;
   }
-  body h1 {
-    font-size: 16px;
-  }
   body p {
     font-size: 13px;
+  }
+  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+    font-size: 16px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body {
     padding-top: 60px;
   }
-  body h1 {
-    font-size: 16px;
-  }
   body p {
     font-size: 13px;
+  }
+  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+    font-size: 16px;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   body {
     padding-top: 70px;
   }
-  body h1 {
-    font-size: 18px;
-  }
   body p {
     font-size: 14px;
+  }
+  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     padding-top: 80px;
   }
-  body h1 {
-    font-size: 22px;
-  }
   body p {
     font-size: 15px;
+  }
+  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+    font-size: 22px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
   body {
     padding-top: 80px;
   }
-  body h1 {
-    font-size: 24px;
-  }
   body p {
     font-size: 16px;
+  }
+  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+    font-size: 24px;
   }
 }
 @media (min-width: 1200px) {
   body {
     padding-top: 85px;
   }
-  body h1 {
-    font-size: 26px;
-  }
   body p {
     font-size: 17px;
+  }
+  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+    font-size: 26px;
   }
 }
 

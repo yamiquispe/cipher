@@ -13,7 +13,6 @@ body {
 
     #view {
         width: 100%;
-        padding: 0;
         margin: 0;
         display: flex;
         justify-content: center;
@@ -26,13 +25,8 @@ body {
             text-align: center;
         }
     
-        /* View Encode & Decode */
-        .content-view-encode-decode {
-            display: flex;
-        }
-
-        /* View Error */
-        .content-view-error {
+        /* View Encode & Decode and View Error */
+        .content-view-encode-decode, .content-view-instructions, .content-view-error {
             display: flex;
         }
     }
@@ -40,67 +34,79 @@ body {
     @media (max-width: $blackberry) {
         padding-top: 60px;
 
-        h1 {
-            font-size: 16px;
-        }
-
         p {
             font-size: 13px;
+        }
+
+        .content-view-encode-decode, .content-view-instructions {
+            h1 {
+                font-size: 16px;
+            }
         }
     }
     @media (min-width: $blackberry) and (max-width: $smartphone) {
         padding-top: 60px;
 
-        h1 {
-            font-size: 16px;
-        }
-
         p {
             font-size: 13px;
+        }
+
+        .content-view-encode-decode, .content-view-instructions {
+            h1 {
+                font-size: 16px;
+            }
         }
     }
     @media (min-width: $smartphone) and (max-width: $tablet) {
         padding-top: 70px;
 
-        h1 {
-            font-size: 18px;
-        }
-
         p {
             font-size: 14px;
+        }
+
+        .content-view-encode-decode, .content-view-instructions {
+            h1 {
+                font-size: 18px;
+            }
         }
     }
     @media (min-width: $tablet) and (max-width: $notebook) {
         padding-top: 80px;
 
-        h1 {
-            font-size: 22px;
-        }
-
         p {
             font-size: 15px;
+        }
+
+        .content-view-encode-decode, .content-view-instructions {
+            h1 {
+                font-size: 22px;
+            }
         }
     }
     @media (min-width: $notebook) and (max-width: $desktop) {
         padding-top: 80px;
 
-        h1 {
-            font-size: 24px;
-        }
-
         p {
             font-size: 16px;
+        }
+
+        .content-view-encode-decode, .content-view-instructions {
+            h1 {
+                font-size: 24px;
+            }
         }
     }
     @media (min-width: $desktop) {
         padding-top: 85px;
 
-        h1 {
-            font-size: 26px;
-        }
-
         p {
             font-size: 17px;
+        }
+
+        .content-view-encode-decode, .content-view-instructions {
+            h1 {
+                font-size: 26px;
+            }
         }
     }
 }
