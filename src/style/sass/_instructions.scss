@@ -12,58 +12,81 @@
     .content-view-instructions {
         flex-direction: column;
         justify-content: center;
-
-        #container-description-web {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: aqua;
-        }
+        align-content: center;
 
         #container-instructions {
-            width: 100%;
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            background: orange;
 
             section {
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                border: 2px solid #00AF80;
+                border-radius: 10px;
 
                 div {
                     display: flex;
-                    flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    background: gray;
+                }
+
+                .subtitle-instructions {
+                    border-bottom: 2px solid #00AF80;
+                }
+
+                .item-instruction {
+                    p {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
 
         @media (max-width: $blackberry) {
-            width: 90%;
+            width: 85%;
 
             #container-description-web {
                 width: 100%;
-                
+                margin-top: 7%;
+
+                p {
+                    margin-top: -3%;
+                }
             }
 
             #container-instructions {
                 width: 100%;
-                
+                flex-direction: column;
+                align-content: center;
+                margin: 5% 0 5% 0;
+
                 section {
-                    width: 80%;
-    
-                    div {
-                        
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    margin: 3% 0 8% 0;
+                    padding: 2% 0 2% 0;
+
+                    .subtitle-instructions {
+                        width: 100%;
+                        margin-bottom: 2%;
+
+                        h2 {
+                            font-size: 14px;
+                            margin: 0 0 2% 0;
+                        }
+                    }
+
+                    .item-instruction {
+                        flex-direction: column;
+                        margin: 3% 0 3% 0;
+                        padding: 0 5% 0 5%;
+
                         img {
-                            width: 50px;
+                            width: 12vw;
+                        }
+                
+                        p {
+                            margin-top: 3%;
                         }
                     }
                 }
@@ -71,23 +94,264 @@
         }
     
         @media (min-width: $blackberry) and (max-width: $smartphone) {
-            /* @include style(45px, 15px); */
+            width: 75%;
+
+            #container-description-web {
+                width: 100%;
+                margin: 9% 0 3% 0;
+
+                p {
+                    margin: 0 2% 0 2%;
+                }
+            }
+
+            #container-instructions {
+                width: 100%;
+                flex-direction: column;
+                align-content: center;
+                margin: 5% 0 5% 0;
+
+                section {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    margin: 3% 0 8% 0;
+                    padding: 2% 0 2% 0;
+
+                    .subtitle-instructions {
+                        width: 100%;
+                        margin-bottom: 2%;
+
+                        h2 {
+                            font-size: 15px;
+                            margin: 0 0 2% 0;
+                        }
+                    }
+
+                    .item-instruction {
+                        flex-direction: column;
+                        margin: 3% 0 3% 0;
+                        padding: 0 7% 0 7%;
+
+                        img {
+                            width: 10vw;
+                        }
+                
+                        p {
+                            margin-top: 3%;
+                        }
+                    }
+                }
+            }
         }
     
         @media (min-width: $smartphone) and (max-width: $tablet) {
-            /* @include style(45px, 16px); */
+            width: 90%;
+
+            #container-description-web {
+                width: 100%;
+                margin: 5% 0 5% 0;
+
+                p {
+                    margin: -1% 2% 0 2%;
+                }
+            }
+
+            #container-instructions {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content: center;
+
+                section {
+                    width: 40%;
+                    flex-direction: column;
+                    align-content: center;
+                    margin: 1% 0 8% 0;
+                    padding: 2% 0 2% 0;
+
+                    .subtitle-instructions {
+                        width: 100%;
+                        margin-bottom: 2%;
+
+                        h2 {
+                            font-size: 16px;
+                            margin: 0 0 2% 0;
+                        }
+                    }
+
+                    .item-instruction {
+                        flex-direction: column;
+                        margin: 3% 0 3% 0;
+                        padding: 0 4% 0 4%;
+
+                        img {
+                            width: 7vw;
+                        }
+                
+                        p {
+                            margin-top: 3%;
+                        }
+                    }
+                }
+            }
         }
     
         @media (min-width: $tablet) and (max-width: $notebook) {
-           /*  @include style(47.5px, 17px); */
+            width: 80%;
+
+            #container-description-web {
+                width: 100%;
+                margin: 3% 0 5% 0;
+
+                p {
+                    margin: -1% 5% 0 5%;
+                }
+            }
+
+            #container-instructions {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                align-content: center;
+
+                section {
+                    width: 40%;
+                    flex-direction: column;
+                    align-content: center;
+                    margin: 1% 0 7% 0;
+                    padding: 2% 0 1% 0;
+
+                    .subtitle-instructions {
+                        width: 100%;
+                        margin-bottom: 2%;
+
+                        h2 {
+                            font-size: 17px;
+                            margin: 0 0 5% 0;
+                        }
+                    }
+
+                    .item-instruction {
+                        flex-direction: column;
+                        margin: 3% 0 3% 0;
+                        padding: 0 8% 0 8%;
+
+                        img {
+                            width: 5vw;
+                        }
+                
+                        p {
+                            margin-top: 3%;
+                        }
+                    }
+                }
+            }
         }
     
         @media (min-width: $notebook) and (max-width: $desktop) {
-            /* @include style(50px, 18px); */
+            width: 80%;
+
+            #container-description-web {
+                width: 100%;
+                margin: 4% 0 5% 0;
+
+                p {
+                    margin: -1% 7% 0 7%;
+                }
+            }
+
+            #container-instructions {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                align-content: center;
+
+                section {
+                    width: 40%;
+                    flex-direction: column;
+                    align-content: center;
+                    margin: 1% 0 7% 0;
+                    padding: 2% 0 1% 0;
+
+                    .subtitle-instructions {
+                        width: 100%;
+                        margin-bottom: 2%;
+
+                        h2 {
+                            font-size: 18px;
+                            margin: 0 0 5% 0;
+                        }
+                    }
+
+                    .item-instruction {
+                        flex-direction: column;
+                        margin: 3% 0 3% 0;
+                        padding: 0 9% 0 9%;
+
+                        img {
+                            width: 4vw;
+                        }
+                
+                        p {
+                            margin-top: 3%;
+                        }
+                    }
+                }
+            }
         }
         
         @media (min-width: $desktop) {
-           /*  @include style(52.5px, 19px); */
+            width: 80%;
+
+            #container-description-web {
+                width: 100%;
+                margin: 3% 0 4% 0;
+
+                p {
+                    margin: -1% 10% 0 10%;
+                }
+            }
+
+            #container-instructions {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content: center;
+
+                section {
+                    width: 35%;
+                    flex-direction: column;
+                    align-content: center;
+                    margin: 1% 0 6% 0;
+                    padding: 2% 0 1% 0;
+
+                    .subtitle-instructions {
+                        width: 100%;
+                        margin-bottom: 2%;
+
+                        h2 {
+                            font-size: 19px;
+                            margin: 0 0 5% 0;
+                        }
+                    }
+
+                    .item-instruction {
+                        flex-direction: column;
+                        margin: 3% 0 3% 0;
+                        padding: 0 9% 0 9%;
+
+                        img {
+                            display: flex;
+                            width: 3.5vw;
+                        }
+                
+                        p {
+                            margin-top: 3%;
+                        }
+                    }
+                }
+            }
         }
     }
 }

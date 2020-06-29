@@ -2,7 +2,7 @@
 const instructions = () => {
     const view = `
     <div id="container-description-web">
-        <h2>Instrucciones</h2>
+        <h1>Instrucciones</h1>
         <p>
             En criptografía, el cifrado César, es un tipo de cifrado por sustitución en el que 
             una letra en el texto original es reemplazada por otra letra que se encuentra un 
@@ -11,21 +11,23 @@ const instructions = () => {
     </div> 
     <div id="container-instructions">
         <section>
-            <h2>Para cifrar:</h2>
-            <div>
+            <div class="subtitle-instructions">
+                <h2>Para cifrar:</h2>
+            </div>
+            <div class="item-instruction">
                 <img src="./assets/one.png" alt="">
                 <p>
                     Indique el número de posiciones a desplazar.
                 </p>
             </div>
-            <div>
+            <div class="item-instruction">
                 <img src="./assets/two.png" alt="">
                 <p>
                     Escriba el mensaje que desea cifrar y presione el botón
                     "Cifrar mensaje".
                 </p>
             </div>
-            <div>
+            <div class="item-instruction">          
                 <img src="./assets/three.png" alt="">
                 <p>
                     Se mostrará un modal con el mensaje cifrado.
@@ -33,21 +35,23 @@ const instructions = () => {
             </div>
         </section>
         <section>
-            <h2>Para descifrar:</h2>
-            <div>
-                <img src="./assets/one.png" alt="">
+            <div class="subtitle-instructions">
+                <h2>Para descifrar:</h2>
+            </div>
+            <div class="item-instruction">
+                <img src="./assets/one.png" alt="">          
                 <p>
                     Indique el número de posiciones de desplazamiento.
                 </p>
             </div>
-            <div>
+            <div class="item-instruction">
                 <img src="./assets/two.png" alt="">
                 <p>
                     Escriba el mensaje que desea descifrar y presione el botón
                     "Descifrar mensaje".
                 </p>
             </div>
-            <div>
+            <div class="item-instruction">     
                 <img src="./assets/three.png" alt="">
                 <p>
                     Se mostrará un modal con el mensaje descifrado.
