@@ -1,12 +1,14 @@
 
+
 const instructions = () => {
-    const view = `
+  const view = `
     <div id="container-description-web">
         <h1>Instrucciones</h1>
         <p>
-            En criptografía, el cifrado César, es un tipo de cifrado por sustitución en el que 
-            una letra en el texto original es reemplazada por otra letra que se encuentra un 
-            número fijo de posiciones más adelante en el alfabeto. 
+            En criptografía, el cifrado César, es un tipo de cifrado por 
+            sustitución en el que una letra en el texto original es reemplazada 
+            por otra letra que se encuentra un número fijo de posiciones más 
+            adelante en el alfabeto. 
         </p>
     </div> 
     <div id="container-instructions">
@@ -61,12 +63,12 @@ const instructions = () => {
     </div>
     `;
 
-    const sectionView = document.createElement('section');
-    sectionView.className = 'content-view-instructions';
-    sectionView.innerHTML = view;
+  const sectionView = document.createElement('section');
+  sectionView.className = 'content-view-instructions';
+  sectionView.innerHTML = view;
 
-    return sectionView;
-}
+  return sectionView;
+};
 
 
 export default instructions;

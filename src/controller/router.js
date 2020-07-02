@@ -1,4 +1,4 @@
-import { views } from '../view/views.js';
+import {views} from '../view/views.js';
 
 
 const router = (hash) => {

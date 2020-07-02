@@ -1,5 +1,7 @@
-import { header } from './header.js';
-import { viewController } from './router.js';
+import {header} from './header.js';
+import {viewController} from './router.js';
+import {validateEncode} from './encode.js';
+import {restore} from './restore.js';
 
 
 const hashChange = () => {
@@ -7,12 +9,20 @@ const hashChange = () => {
   viewController(window.location.hash);
 
   // hashchange: Evento que se dispara al cambiar el hash de la URL.
-  window.addEventListener('hashchange', () => viewController(window.location.hash));
-}
+  window.addEventListener('hashchange', () => viewController(location.hash));
+};
 
 
 // load: Evento que se dispara al cargar el documento.
 window.addEventListener('load', () => {
   header();
   hashChange();
+  validateEncode();
+  restore();
+
+  const offset = document.getElementsByTagName('input')[0];
+
+  offset.oninvalid = function (event) {
+    event.target.setCustomValidity('Username should only contain lowercase letters. e.g. john');
+  };
 });

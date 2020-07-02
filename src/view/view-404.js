@@ -1,7 +1,5 @@
-
-
 const pageError = () => {
-    const view = `
+  const view = `
     <div>
         <h1>¡ERROR!</h1>
         <p>
@@ -12,12 +10,12 @@ const pageError = () => {
     <img src="./assets/404.gif" alt="404">
     `;
 
-    const sectionView = document.createElement('section');
-    
-    sectionView.innerHTML = view;
-    sectionView.className = 'content-view-error';
+  const sectionView = document.createElement('section');
 
-    return sectionView;
-}
+  sectionView.innerHTML = view;
+  sectionView.className = 'content-view-error';
+
+  return sectionView;
+};
 
 export default pageError;

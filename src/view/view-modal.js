@@ -1,6 +1,7 @@
 
+
 const modal = () => {
-    const contentModal = `
+  const contentModal = `
     <div class="flex" id="flex">
         <div class="content-modal">
             <div></div>
@@ -10,11 +11,11 @@ const modal = () => {
     </div>
     `;
 
-    const divModal = document.createElement('div');
-    divModal.innerHTML = contentModal;
+  const divModal = document.createElement('div');
+  divModal.innerHTML = contentModal;
 
-    return divModal;
-}
+  return divModal;
+};
 
 
 export default modal;
