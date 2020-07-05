@@ -19,10 +19,4 @@ window.addEventListener('load', () => {
   hashChange();
   validateEncode();
   restore();
-
-  const offset = document.getElementsByTagName('input')[0];
-
-  offset.oninvalid = function (event) {
-    event.target.setCustomValidity('Username should only contain lowercase letters. e.g. john');
-  };
 });

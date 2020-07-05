@@ -32,6 +32,10 @@
                 border-radius: 5px;
             }
 
+            input:invalid {
+                border-color: red;
+            }
+
             textarea {
                 resize: none;
             }

@@ -371,6 +371,9 @@ footer p {
   border: 1px solid gray;
   border-radius: 5px;
 }
+#view .content-view-encode-decode .div-cipher input:invalid {
+  border-color: red;
+}
 #view .content-view-encode-decode .div-cipher textarea {
   resize: none;
 }
@@ -996,7 +999,6 @@ footer p {
 
 body {
   margin: 0;
-  padding: 0;
   font-family: "Athiti", sans-serif;
   background: #c7f3b3ff;
 }

@@ -13,11 +13,13 @@ const encode = () => {
         <label for="displacement">
             Indique el número de posiciones a desplazar: 
         </label>
-        <input type="number" name="displacement" id="displacement" step="1" min="1" pattern="[0-9]*" title="Oyeeeeeeeeeeeee">
-
+        <input type="number" name="displacement" id="displacement" min="1" 
+        pattern="[0-9]*" inputmode="numeric" 
+        title="Ingrese un valor numérico entero mayor a cero.">
         <label for="message">Escriba mensaje a cifrar: </label>
-        <textarea name="message" id="message"></textarea> 
-
+        <textarea name="message" id="message" 
+        title="Ingrese un texto. Solo se cifran letras.">
+        </textarea> 
         <div class="div-buttons">
             <button id="button-encode">Cifrar mensaje</button>
             <button id="button-restore">Restablecer</button>
@@ -31,5 +33,6 @@ const encode = () => {
 
   return sectionView;
 };
+
 
 export default encode;
