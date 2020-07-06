@@ -52,14 +52,16 @@ export default window.cipher = {
     for (let i = 0; i < message.length; i++) {
       // Mayúsculas
       if (message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90) {
-        character = (message.charCodeAt(i) - 65 + 26 * offset - offset) % 26 + 65;
+        character = (message.charCodeAt(i) - 65 + 26 * offset - offset) %
+        26 + 65;
 
         messageDecode += String.fromCharCode(character);
       }
 
       // Minúsculas
       if (message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122) {
-        character = (message.charCodeAt(i) - 97 + 26 * offset - offset) % 26 + 97;
+        character = (message.charCodeAt(i) - 97 + 26 * offset - offset) %
+        26 + 97;
 
         messageDecode += String.fromCharCode(character);
       }

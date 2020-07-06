@@ -18,8 +18,8 @@ const decode = () => {
         <textarea name="message" id="message"></textarea> 
 
         <div class="div-buttons">
-            <button>Descifrar mensaje</button>
-            <button>Restablecer</button>
+            <button id="button-decode">Descifrar mensaje</button>
+            <button id="button-restore">Restablecer</button>
         </div>
     </div>
     `;

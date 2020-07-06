@@ -1,29 +1,16 @@
+import {offsetMessage} from '../js/offset-message.js';
 
 
-const validaDes = function () {
-  const offsetDes = document.getElementById('pos').value;
-  console.log(`Desplazamiento: ${offsetDes}`);
+export const validateDecode = () => {
+  const buttonDecode = document.getElementById('button-decode');
+  let messageModal = '';
 
-  if (parseInt(offsetDes) < 1) {
-    alert('El número no es válido.');
+  buttonDecode.addEventListener('click', () => {
+    const offset = document.getElementsByTagName('input')[0].value;
+    const message = document.getElementsByTagName('textarea')[0].value;
 
-    document.getElementById('pos').value = '';
-    document.getElementById('pos').focus();
-  } else {
-    const stringDes = document.getElementById('msjeDes').value;
-    console.log(`Mensaje: ${stringDes}`);
+    messageModal = offsetMessage(offset, message, 'decode');
+  });
 
-    if (stringDes === '') {
-      alert('Ingrese un texto.');
-      document.getElementById('msjeDes').focus();
-    } else {
-      alert(`El mensaje descifrado es: ${window.cipher.decode(offsetDes, stringDes)}`);
-    }
-  }
-};
-
-
-const resDes = function resDes() {
-  document.getElementById('pos').value = '';
-  document.getElementById('msjeDes').value = '';
+  return messageModal;
 };

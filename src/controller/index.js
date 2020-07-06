@@ -1,6 +1,7 @@
 import {header} from './header.js';
 import {viewController} from './router.js';
 import {validateEncode} from './encode.js';
+import {validateDecode} from './decode.js';
 import {restore} from './restore.js';
 
 
@@ -18,5 +19,6 @@ window.addEventListener('load', () => {
   header();
   hashChange();
   validateEncode();
+  validateDecode();
   restore();
 });
