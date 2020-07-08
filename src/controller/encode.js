@@ -1,15 +1,15 @@
-import {offsetMessage} from '../js/offset-message.js';
+import {validateInput} from './validate-input.js';
 
 
-export const validateEncode = () => {
-  const buttonEncode = document.getElementById('button-encode');
+export const validateEncode = (sectionView) => {
+  const buttonEncode = sectionView.querySelector('#button-encode');
   let messageModal = '';
 
   buttonEncode.addEventListener('click', () => {
-    const offset = document.getElementsByTagName('input')[0].value;
-    const message = document.getElementsByTagName('textarea')[0].value;
+    const offset = sectionView.querySelector('input').value;
+    const message = sectionView.querySelector('textarea').value;
 
-    messageModal = offsetMessage(offset, message, 'encode');
+    messageModal = validateInput(offset, message, 'encode');
   });
 
   return messageModal;

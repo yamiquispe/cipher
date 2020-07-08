@@ -998,7 +998,10 @@ footer p {
 }
 
 .modal {
-  /* display: none; */
+  display: none;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   z-index: 1;
   overflow: auto;
@@ -1008,15 +1011,7 @@ footer p {
   height: 100%;
   background: rgba(163, 163, 163, 0.582);
 }
-.modal .flex {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* background: #f2f2f2; */
-}
-.modal .flex .content-modal {
+.modal .content-modal {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -1024,18 +1019,20 @@ footer p {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
   animation-name: modal;
   animation-duration: 1s;
+  display: flex;
+  flex-direction: column;
 }
-.modal .flex .content-modal .close {
+.modal .content-modal .close {
   color: #f2f2f2;
   font-size: 30px;
   font-weight: bold;
 }
-.modal .flex .content-modal .close :hover {
+.modal .content-modal .close :hover {
   color: #7f8c8d;
   text-decoration: none;
   cursor: pointer;
 }
-.modal .flex .content-modal .modal-header, .modal .flex .content-modal .modal-footer {
+.modal .content-modal .modal-header, .modal .content-modal .modal-footer {
   background: #34495e;
   color: #f2f2f2;
 }

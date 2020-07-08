@@ -1,3 +1,6 @@
+import {validateEncode} from '../controller/encode.js';
+import {restore} from '../controller/restore.js';
+import modal from '../view/view-modal.js';
 
 
 const encode = () => {
@@ -26,26 +29,16 @@ const encode = () => {
         </div>
     </div>
     <div class="modal">
-    <div class="flex" id="flex">
-    <div class="content-modal">
-        <div class="modal-header flex">
-            <h2>Título del modal</h2>
-            <span class="close" id="close">&times;</span>
-        </div>
-        <div class="modal-body">
-            <p>texto jejejejejje</p>
-        </div>
-        <div class="modal-footer">
-            <button>Aceptar</button>
-        </div>
-    </div>
-</div>
+        ${modal()}
     </div>
     `;
 
   const sectionView = document.createElement('section');
   sectionView.className = 'content-view-encode-decode';
   sectionView.innerHTML = view;
+
+  validateEncode(sectionView);
+  restore(sectionView);
 
   return sectionView;
 };

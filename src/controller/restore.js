@@ -1,9 +1,9 @@
 
-export const restore = () => {
-  const buttonRestore = document.getElementById('button-restore');
+export const restore = (sectionView) => {
+  const buttonRestore = sectionView.querySelector('#button-restore');
 
   buttonRestore.addEventListener('click', () => {
-    document.getElementsByTagName('input')[0].value = '';
-    document.getElementsByTagName('textarea')[0].value = '';
+    sectionView.querySelector('input').value = '';
+    sectionView.querySelector('textarea').value = '';
   });
 };

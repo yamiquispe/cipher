@@ -2,7 +2,6 @@
 
 const modal = () => {
   const contentModal = `
-    <div class="flex" id="flex">
         <div class="content-modal">
             <div class="modal-header flex">
               <h2>Título del modal</h2>
@@ -15,14 +14,9 @@ const modal = () => {
               <button>Aceptar</button>
             </div>
         </div>
-    </div>
     `;
 
-  const divModal = document.createElement('div');
-  divModal.className = 'content-view-modal';
-  divModal.innerHTML = contentModal;
-
-  return divModal;
+  return contentModal;
 };
 
 

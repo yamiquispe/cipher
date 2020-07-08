@@ -1,8 +1,8 @@
-import cipher from './cipher.js';
+import cipher from '../js/cipher.js';
 import {characterInvalid} from './character-invalid.js';
 
 
-export const offsetMessage = (offset, message, operation) => {
+export const validateInput = (offset, message, operation) => {
   let messageModal = '';
 
   // Casos: offset = ,89 (al ingresar 0.89); offset = .90 (al ingresar .90)
