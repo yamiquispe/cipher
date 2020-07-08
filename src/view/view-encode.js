@@ -1,6 +1,5 @@
 import {validateEncode} from '../controller/encode.js';
 import {restore} from '../controller/restore.js';
-import modal from '../view/view-modal.js';
 
 
 const encode = () => {
