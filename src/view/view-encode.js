@@ -28,9 +28,6 @@ const encode = () => {
             <button id="button-restore">Restablecer</button>
         </div>
     </div>
-    <div class="modal">
-        ${modal()}
-    </div>
     `;
 
   const sectionView = document.createElement('section');

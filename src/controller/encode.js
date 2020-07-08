@@ -1,4 +1,5 @@
 import {validateInput} from './validate-input.js';
+import modal from '../view/view-modal.js';
 
 
 export const validateEncode = (sectionView) => {
@@ -10,7 +11,7 @@ export const validateEncode = (sectionView) => {
     const message = sectionView.querySelector('textarea').value;
 
     messageModal = validateInput(offset, message, 'encode');
-  });
 
-  return messageModal;
+    sectionView.appendChild(modal(messageModal, true));
+  });
 };
