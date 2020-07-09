@@ -26,7 +26,7 @@ const modal = (response, cipher) => {
   sectionModal.innerHTML = contentModal;
 
   modalClose(sectionModal);
-  modalCopy(sectionModal);
+  (!response.error) && modalCopy(sectionModal);
   modalAccept(sectionModal);
 
   return sectionModal;
