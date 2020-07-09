@@ -16,3 +16,10 @@ window.addEventListener('load', () => {
   header();
   hashChange();
 });
+
+
+window.addEventListener('click', (event) => {
+  const containerModal = document.getElementById('container-modal');
+
+  if (event.target == containerModal) containerModal.remove();
+});
