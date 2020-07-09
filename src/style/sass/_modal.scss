@@ -1,8 +1,7 @@
 @import '_measures.scss';
 
 
-.modal {
-  /*   display: none; */
+#container-modal {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +14,7 @@
     height: 100%;
     background: rgba(163, 163, 163, 0.582);
 
-        .content-modal {
+        #modal {
             position: relative;
             background-color: #fefefe;
             margin: auto;
