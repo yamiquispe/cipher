@@ -354,9 +354,6 @@ footer p {
 #view .content-view-encode-decode {
   flex-direction: column;
 }
-#view .content-view-encode-decode p {
-  margin-bottom: 25px;
-}
 #view .content-view-encode-decode .div-cipher {
   display: flex;
   flex-direction: column;
@@ -389,9 +386,13 @@ footer p {
 @media (max-width: 320px) {
   #view .content-view-encode-decode {
     width: 80%;
-    margin: 3% 0 8% 0;
+    margin: 3% 0 11% 0;
+  }
+  #view .content-view-encode-decode h1 {
+    margin-bottom: -3%;
   }
   #view .content-view-encode-decode .div-cipher {
+    margin-top: 5%;
     padding: 0 5% 0 5%;
     border: 5px solid #6aa84f;
     border-radius: 8px;
@@ -414,9 +415,13 @@ footer p {
 @media (min-width: 320px) and (max-width: 480px) {
   #view .content-view-encode-decode {
     width: 80%;
-    margin: 6% 0 9% 0;
+    margin: 7% 0 9% 0;
+  }
+  #view .content-view-encode-decode h1 {
+    margin-bottom: -1%;
   }
   #view .content-view-encode-decode .div-cipher {
+    margin-top: 2%;
     padding: 0 5% 0 5%;
     border: 6px solid #6aa84f;
     border-radius: 8px;
@@ -442,7 +447,11 @@ footer p {
     width: 70%;
     margin: 5% 0 7% 0;
   }
+  #view .content-view-encode-decode h1 {
+    margin-bottom: 0;
+  }
   #view .content-view-encode-decode .div-cipher {
+    margin-top: 2%;
     padding: 0 12% 0 12%;
     border: 7px solid #6aa84f;
     border-radius: 8px;
@@ -458,7 +467,7 @@ footer p {
     height: 50px;
   }
   #view .content-view-encode-decode .div-cipher button {
-    width: 45%;
+    width: 42%;
     height: 30px;
     font-size: 12px;
     margin: 0 3% 0 3%;
@@ -471,9 +480,12 @@ footer p {
     width: 60%;
     margin: 3% 0 6% 0;
   }
+  #view .content-view-encode-decode h1 {
+    margin-bottom: -1%;
+  }
   #view .content-view-encode-decode .div-cipher {
     padding: 0 12% 0 12%;
-    margin: 0 5% 0 5%;
+    margin: 2% 5% 0 5%;
     border: 8px solid #6aa84f;
     border-radius: 8px;
   }
@@ -501,9 +513,12 @@ footer p {
     width: 60%;
     margin: 3% 0 5% 0;
   }
+  #view .content-view-encode-decode h1 {
+    margin-bottom: -1%;
+  }
   #view .content-view-encode-decode .div-cipher {
     padding: 0 12% 0 12%;
-    margin: 0 7% 0 7%;
+    margin: 2% 7% 0 7%;
     border: 9px solid #6aa84f;
     border-radius: 8px;
   }
@@ -531,9 +546,12 @@ footer p {
     width: 65%;
     margin: 3% 0 5% 0;
   }
+  #view .content-view-encode-decode h1 {
+    margin-bottom: 0;
+  }
   #view .content-view-encode-decode .div-cipher {
     padding: 0 12% 0 12%;
-    margin: 0 12% 0 12%;
+    margin: 3% 12% 0 12%;
     border: 10px solid #6aa84f;
     border-radius: 8px;
   }
@@ -1008,32 +1026,336 @@ footer p {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(163, 163, 163, 0.582);
+  background: rgba(11, 10, 10, 0.81);
 }
 #container-modal #modal {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  width: 30%;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
   animation-name: modal;
   animation-duration: 1s;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 }
-#container-modal #modal .close {
-  color: #f2f2f2;
-  font-size: 30px;
-  font-weight: bold;
-}
-#container-modal #modal .close :hover {
-  color: #7f8c8d;
-  text-decoration: none;
+#container-modal #modal button {
+  background: #c7f3b3ff;
   cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #a2fb7a;
+  font-family: "Athiti", sans-serif;
 }
 #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
-  background: #34495e;
+  display: flex;
+  align-items: center;
+  background: #6aa84f;
   color: #f2f2f2;
+}
+#container-modal #modal .modal-header {
+  justify-content: space-between;
+}
+#container-modal #modal .modal-header h2 {
+  font-weight: bold;
+}
+#container-modal #modal .modal-header #span-close {
+  color: #f2f2f2;
+  font-weight: bold;
+  cursor: pointer;
+}
+#container-modal #modal .modal-header #span-close :hover {
+  color: #7f8c8d;
+}
+#container-modal #modal .modal-footer {
+  border-radius: 0 0 10px 10px;
+  justify-content: flex-end;
+}
+#container-modal #modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container-modal #modal .modal-body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  border: 2px solid grey;
+}
+#container-modal #modal .modal-body span {
+  font-weight: bold;
+  margin-top: -3%;
+}
+@media (max-width: 320px) {
+  #container-modal #modal {
+    width: 70%;
+  }
+  #container-modal #modal button {
+    width: 35%;
+    padding: 1%;
+    font-size: 13px;
+  }
+  #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
+    height: 10vh;
+  }
+  #container-modal #modal .modal-header {
+    border-radius: 3px 3px 0 0;
+  }
+  #container-modal #modal .modal-header h2, #container-modal #modal .modal-header span {
+    font-size: 18px;
+  }
+  #container-modal #modal .modal-header h2 {
+    margin-left: 5%;
+  }
+  #container-modal #modal .modal-footer {
+    border-radius: 0 0 3px 3px;
+  }
+  #container-modal #modal .modal-body {
+    padding: 3% 5% 7% 5%;
+  }
+  #container-modal #modal .modal-body div {
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: -3%;
+  }
+  #container-modal #modal .modal-body button {
+    margin-top: 6%;
+  }
+  #container-modal #modal .modal-body span {
+    font-size: 11px;
+    margin-top: 6%;
+  }
+  #container-modal #modal #span-close, #container-modal #modal #button-accept {
+    margin-right: 5%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #container-modal #modal {
+    width: 60%;
+  }
+  #container-modal #modal button {
+    width: 30%;
+    padding: 1%;
+    font-size: 13px;
+  }
+  #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
+    height: 11vh;
+  }
+  #container-modal #modal .modal-header {
+    border-radius: 4px 4px 0 0;
+  }
+  #container-modal #modal .modal-header h2, #container-modal #modal .modal-header span {
+    font-size: 19px;
+  }
+  #container-modal #modal .modal-header h2 {
+    margin-left: 6%;
+  }
+  #container-modal #modal .modal-footer {
+    border-radius: 0 0 4px 4px;
+  }
+  #container-modal #modal .modal-body {
+    padding: 3% 5% 7% 5%;
+  }
+  #container-modal #modal .modal-body div {
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: -2%;
+  }
+  #container-modal #modal .modal-body button {
+    margin-top: 6%;
+  }
+  #container-modal #modal .modal-body span {
+    font-size: 13px;
+    margin-top: 3%;
+  }
+  #container-modal #modal #span-close, #container-modal #modal #button-accept {
+    margin-right: 6%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #container-modal #modal {
+    width: 50%;
+  }
+  #container-modal #modal button {
+    width: 30%;
+    padding: 1%;
+    font-size: 14px;
+  }
+  #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
+    height: 12vh;
+  }
+  #container-modal #modal .modal-header {
+    border-radius: 5px 5px 0 0;
+  }
+  #container-modal #modal .modal-header h2, #container-modal #modal .modal-header span {
+    font-size: 20px;
+  }
+  #container-modal #modal .modal-header h2 {
+    margin-left: 7%;
+  }
+  #container-modal #modal .modal-footer {
+    border-radius: 0 0 5px 5px;
+  }
+  #container-modal #modal .modal-body {
+    padding: 3% 5% 6% 5%;
+  }
+  #container-modal #modal .modal-body div {
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: -2%;
+  }
+  #container-modal #modal .modal-body button {
+    margin-top: 4%;
+  }
+  #container-modal #modal .modal-body span {
+    font-size: 13px;
+    margin-top: 3%;
+  }
+  #container-modal #modal #span-close, #container-modal #modal #button-accept {
+    margin-right: 7%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #container-modal #modal {
+    width: 40%;
+  }
+  #container-modal #modal button {
+    width: 30%;
+    padding: 1%;
+    font-size: 15px;
+  }
+  #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
+    height: 13vh;
+  }
+  #container-modal #modal .modal-header {
+    border-radius: 6px 6px 0 0;
+  }
+  #container-modal #modal .modal-header h2, #container-modal #modal .modal-header span {
+    font-size: 22px;
+  }
+  #container-modal #modal .modal-header h2 {
+    margin-left: 6%;
+  }
+  #container-modal #modal .modal-footer {
+    border-radius: 0 0 6px 6px;
+  }
+  #container-modal #modal .modal-body {
+    padding: 3% 5% 6% 5%;
+  }
+  #container-modal #modal .modal-body div {
+    width: 75%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: -2%;
+  }
+  #container-modal #modal .modal-body button {
+    margin-top: 4%;
+  }
+  #container-modal #modal .modal-body span {
+    font-size: 14px;
+    margin-top: 3%;
+  }
+  #container-modal #modal #span-close, #container-modal #modal #button-accept {
+    margin-right: 6%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #container-modal #modal {
+    width: 35%;
+  }
+  #container-modal #modal button {
+    width: 30%;
+    padding: 1%;
+    font-size: 16px;
+  }
+  #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
+    height: 14vh;
+  }
+  #container-modal #modal .modal-header {
+    border-radius: 6px 6px 0 0;
+  }
+  #container-modal #modal .modal-header h2, #container-modal #modal .modal-header span {
+    font-size: 24px;
+  }
+  #container-modal #modal .modal-header h2 {
+    margin-left: 6%;
+  }
+  #container-modal #modal .modal-footer {
+    border-radius: 0 0 6px 6px;
+  }
+  #container-modal #modal .modal-body {
+    padding: 3% 5% 6% 5%;
+  }
+  #container-modal #modal .modal-body div {
+    width: 75%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: -2%;
+  }
+  #container-modal #modal .modal-body button {
+    margin-top: 4%;
+  }
+  #container-modal #modal .modal-body span {
+    font-size: 15px;
+    margin-top: 3%;
+  }
+  #container-modal #modal #span-close, #container-modal #modal #button-accept {
+    margin-right: 6%;
+  }
+}
+@media (min-width: 1200px) {
+  #container-modal #modal {
+    width: 30%;
+  }
+  #container-modal #modal button {
+    width: 30%;
+    padding: 1%;
+    font-size: 17px;
+  }
+  #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
+    height: 12vh;
+  }
+  #container-modal #modal .modal-header {
+    border-radius: 6px 6px 0 0;
+  }
+  #container-modal #modal .modal-header h2, #container-modal #modal .modal-header span {
+    font-size: 25px;
+  }
+  #container-modal #modal .modal-header h2 {
+    margin-left: 6%;
+  }
+  #container-modal #modal .modal-footer {
+    border-radius: 0 0 6px 6px;
+  }
+  #container-modal #modal .modal-body {
+    padding: 3% 5% 6% 5%;
+  }
+  #container-modal #modal .modal-body div {
+    width: 75%;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-top: -2%;
+  }
+  #container-modal #modal .modal-body button {
+    margin-top: 4%;
+  }
+  #container-modal #modal .modal-body span {
+    font-size: 15px;
+    margin-top: 3%;
+  }
+  #container-modal #modal #span-close, #container-modal #modal #button-accept {
+    margin-right: 6%;
+  }
 }
 @keyframes modal {
   from {

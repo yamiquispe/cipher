@@ -1,9 +1,9 @@
 
 
 export const modalClose = (sectionModal) => {
-  const buttonClose = sectionModal.querySelector('#button-close');
+  const spanClose = sectionModal.querySelector('#span-close');
 
-  buttonClose.addEventListener('click', () => {
+  spanClose.addEventListener('click', () => {
     sectionModal.remove();
   });
 };
@@ -24,7 +24,7 @@ export const modalAccept = (sectionModal) => {
 export const modalCopy = (sectionModal) => {
   const buttonCopy = sectionModal.querySelector('#button-copy');
   const responseCipher = sectionModal.querySelector('#response-cipher');
-  const toast = sectionModal.querySelector('span');
+  const toast = sectionModal.querySelectorAll('span');
 
   buttonCopy.addEventListener('click', () => {
     const textArea = document.createElement('textarea');
@@ -40,9 +40,15 @@ export const modalCopy = (sectionModal) => {
       // Copiando el texto seleccionado
       const selectedText = document.execCommand('copy');
 
-      if (selectedText) toast.innerHTML = '¡Copiado!';
+      if (selectedText) {
+        toast[1].innerHTML = '¡Copiado!';
 
-      else toast.innerHTML = '¡Incapaz de copiar!';
+        setTimeout(() => toast[1].innerHTML = '', 1500);
+      } else {
+        toast[1].innerHTML = '¡Incapaz de copiar!';
+
+        setTimeout(() => toast[1].innerHTML = '', 1500);
+      }
     } catch (err) {
       toast.innerHTML = '¡Browser no soportado!';
     }

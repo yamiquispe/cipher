@@ -12,10 +12,6 @@
     .content-view-encode-decode {
         flex-direction: column;
 
-        p {
-            margin-bottom: 25px;
-        }
-
         .div-cipher {
             display: flex;
             flex-direction: column;
@@ -54,9 +50,14 @@
 
         @media (max-width: $blackberry) {
             width: 80%;
-            margin: 3% 0 8% 0;
+            margin: 3% 0 11% 0;
+
+            h1 {
+                margin-bottom: -3%;
+            }
 
             .div-cipher {
+                margin-top: 5%;
                 padding: 0 5% 0 5%;
                 @include border(5px solid #6aa84f, 8px);
 
@@ -80,9 +81,14 @@
 
         @media (min-width: $blackberry) and (max-width: $smartphone) {
             width: 80%;
-            margin: 6% 0 9% 0;
+            margin: 7% 0 9% 0;
+
+            h1 {
+                margin-bottom: -1%;
+            }
 
             .div-cipher {
+                margin-top: 2%;
                 padding: 0 5% 0 5%;
                 @include border(6px solid #6aa84f, 8px);
 
@@ -109,7 +115,12 @@
             width: 70%;
             margin: 5% 0 7% 0;
 
+            h1 {
+                margin-bottom: 0;
+            }
+
             .div-cipher {
+                margin-top: 2%;
                 padding: 0 12% 0 12%;
                 @include border(7px solid #6aa84f, 8px);
 
@@ -127,7 +138,7 @@
                 }
     
                 button {
-                    width: 45%;
+                    width: 42%;
                     height: 30px;
                     font-size: 12px;
                     margin: 0 3% 0 3%;
@@ -140,9 +151,13 @@
             width: 60%;
             margin: 3% 0 6% 0;
 
+            h1 {
+                margin-bottom: -1%;
+            }
+
             .div-cipher {
                 padding: 0 12% 0 12%;
-                margin: 0 5% 0 5%;
+                margin: 2% 5% 0 5%;
                 @include border(8px solid #6aa84f, 8px);
 
                 label {
@@ -172,9 +187,13 @@
             width: 60%;
             margin: 3% 0 5% 0;
 
+            h1 {
+                margin-bottom: -1%;
+            }
+
             .div-cipher {
                 padding: 0 12% 0 12%;
-                margin: 0 7% 0 7%;
+                margin: 2% 7% 0 7%;
                 @include border(9px solid #6aa84f, 8px);
 
                 label {
@@ -204,9 +223,13 @@
             width: 65%;
             margin: 3% 0 5% 0;
 
+            h1 {
+                margin-bottom: 0;
+            }
+
             .div-cipher {
                 padding: 0 12% 0 12%;
-                margin: 0 12% 0 12%;
+                margin: 3% 12% 0 12%;
                 @include border(10px solid #6aa84f, 8px);
 
                 label {

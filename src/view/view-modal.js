@@ -6,7 +6,7 @@ const modal = (response, cipher) => {
     <section id="modal">
       <div class="modal-header">
         <h2>${(response.error) ? '¡Error!' : 'Respuesta'}</h2>
-        <button id="button-close">&times;</button>
+        <span id="span-close">&times;</span>
       </div>
       <div class="modal-body">
         ${(response.error) ? `<p>${response.text}</p>` :
