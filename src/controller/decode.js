@@ -1,4 +1,5 @@
 import {validateInput} from './validate-input.js';
+import modal from '../view/view-modal.js';
 
 
 export const validateDecode = (sectionView) => {
@@ -10,6 +11,8 @@ export const validateDecode = (sectionView) => {
     const message = sectionView.querySelector('textarea').value;
 
     messageModal = validateInput(offset, message, 'decode');
+
+    sectionView.appendChild(modal(messageModal, false));
   });
 
   return messageModal;
