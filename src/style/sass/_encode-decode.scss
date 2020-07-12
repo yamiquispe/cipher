@@ -1,9 +1,21 @@
 @import '_measures.scss';
 
 
-@mixin border($border, $borderRadius) {
-    border: $border;
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+@mixin border($borderWidth, $borderRadius) {
+    border-width: $borderWidth;
     border-radius: $borderRadius;
+}
+
+
+@mixin marginPadding($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
 }
 
 
@@ -17,6 +29,8 @@
             flex-direction: column;
             justify-content: center;
             background: white;
+            border-color: #6aa84f;
+            border-style: solid;
 
             label {
                 text-align: center;
@@ -44,6 +58,8 @@
                 button {
                     cursor: pointer;
                     background: #ffff8a;
+                    border-color: #ff5;
+                    border-style: solid;
                 }
             }
         }
@@ -57,9 +73,8 @@
             }
 
             .div-cipher {
-                margin-top: 5%;
-                padding: 0 5% 0 5%;
-                @include border(5px solid #6aa84f, 8px);
+                @include border(5px, 8px);
+                @include marginPadding(5% 0 0 0, 0 5% 0 5%);
 
                 label {
                     font-size: 13px;
@@ -74,7 +89,7 @@
                     height: 25px;
                     font-size: 10px;
                     margin: 0 2% 0 2%;
-                    @include border(2px solid #ff5, 5px);
+                    @include border(2px, 5px);
                 }
             }            
         }
@@ -88,9 +103,8 @@
             }
 
             .div-cipher {
-                margin-top: 2%;
-                padding: 0 5% 0 5%;
-                @include border(6px solid #6aa84f, 8px);
+                @include border(6px, 8px);
+                @include marginPadding(2% 0 0 0, 0 5% 0 5%);
 
                 label {
                     font-size: 13px;
@@ -102,11 +116,10 @@
                 }
     
                 button {
-                    width: 43%;
-                    height: 25px;
+                    @include size(43%, 25px);
                     font-size: 11px;
                     margin: 0 2% 0 2%;
-                    @include border(2px solid #ff5, 5px);
+                    @include border(2px, 5px);
                 }
             }            
         }
@@ -120,9 +133,8 @@
             }
 
             .div-cipher {
-                margin-top: 2%;
-                padding: 0 12% 0 12%;
-                @include border(7px solid #6aa84f, 8px);
+                @include border(7px, 8px);
+                @include marginPadding(2% 0 0 0, 0 12% 0 12%);
 
                 label {
                     font-size: 14px;
@@ -138,11 +150,10 @@
                 }
     
                 button {
-                    width: 42%;
-                    height: 30px;
+                    @include size(42%, 30px);
                     font-size: 12px;
                     margin: 0 3% 0 3%;
-                    @include border(2px solid #ff5, 5px);
+                    @include border(2px, 5px);
                 }
             }            
         }
@@ -156,9 +167,8 @@
             }
 
             .div-cipher {
-                padding: 0 12% 0 12%;
-                margin: 2% 5% 0 5%;
-                @include border(8px solid #6aa84f, 8px);
+                @include border(8px, 8px);
+                @include marginPadding(2% 5% 0 5%, 0 12% 0 12%);
 
                 label {
                     font-size: 15px;
@@ -174,11 +184,10 @@
                 }
     
                 button {
-                    width: 40%;
-                    height: 35px;
+                    @include size(40%, 35px);
                     font-size: 13px;
                     margin: 0 3% 0 3%;
-                    @include border(2px solid #ff5, 5px);
+                    @include border(2px, 5px);
                 }
             }            
         }
@@ -192,9 +201,8 @@
             }
 
             .div-cipher {
-                padding: 0 12% 0 12%;
-                margin: 2% 7% 0 7%;
-                @include border(9px solid #6aa84f, 8px);
+                @include border(9px, 8px);
+                @include marginPadding(2% 7% 0 7%, 0 12% 0 12%);
 
                 label {
                     font-size: 16px;
@@ -210,11 +218,10 @@
                 }
     
                 button {
-                    width: 37.5%;
-                    height: 40px;
+                    @include size(37.5%, 40px);
                     font-size: 14px;
                     margin: 0 3% 0 3%;
-                    @include border(3px solid #ff5, 5px);
+                    @include border(3px, 5px);
                 }
             }          
         }
@@ -228,9 +235,8 @@
             }
 
             .div-cipher {
-                padding: 0 12% 0 12%;
-                margin: 3% 12% 0 12%;
-                @include border(10px solid #6aa84f, 8px);
+                @include border(10px, 8px);
+                @include marginPadding(3% 12% 0 12%, 0 12% 0 12%);
 
                 label {
                     font-size: 17px;
@@ -246,11 +252,10 @@
                 }
     
                 button {
-                    width: 35%;
-                    height: 45px;
+                    @include size(35%, 45px);
                     font-size: 14px;
                     margin: 0 3% 0 3%;
-                    @include border(4px solid #ff5, 5px);
+                    @include border(4px, 5px);
                 }
             }        
         }

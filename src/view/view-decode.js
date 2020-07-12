@@ -6,10 +6,10 @@ const decode = () => {
   const view = `
     <h1>Cifrado César para información policial</h1>
     <p>
-       Este sitio web fue creado con el fin de proveer un cifrado personalizado
-       y seguro para la información que manejan los agentes de Policía Nacional
-       del Perú (PNP). Ante los sucesos de hackeos delictivos, la mejor forma 
-       de proteger nuestra información es cifrándola.
+      Este sitio web fue creado con el fin de proveer un cifrado personalizado
+      y seguro para la información que manejan los agentes de la Policía
+      Nacional del Perú (PNP). Ante los sucesos de hackeos delictivos, la 
+      mejor forma de proteger nuestra información es cifrándola.
     </p>
     <div class="div-cipher">
       <label for="displacement">

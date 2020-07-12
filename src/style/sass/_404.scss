@@ -1,9 +1,14 @@
 @import '_measures.scss';
 
 
-@mixin style($height, $size) {
+@mixin size($width, $height) {
+    width: $width;
     height: $height;
-    font-size: $size;
+}
+
+@mixin marginPadding($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
 }
 
 
@@ -33,11 +38,9 @@
         }
 
         @media (max-width: $blackberry) {
-            width: 80%;
-            height: 300px;
+            @include size(80%, 300px);
             flex-direction: column;
-            margin: 6% 6%;
-            padding: 3% 0 3% 0;
+            @include marginPadding(6% 6%, 3% 0 3% 0);
 
             h1 {
                 font-size: 22px;
@@ -55,11 +58,9 @@
         }
 
         @media (min-width: $blackberry) and (max-width: $smartphone) {
-            width: 75%;
-            height: 320px;
+            @include size(75%, 320px);
             flex-direction: column;
-            margin: 10% 10%;
-            padding: 2% 0 2% 0;
+            @include marginPadding(10% 10%, 2% 0 2% 0);
 
             h1 {
                 font-size: 26px;
@@ -76,11 +77,9 @@
         }
 
         @media (min-width: $smartphone) and (max-width: $tablet) {
-            width: 85%;
-            height: 340px;
+            @include size(85%, 340px);
             flex-direction: row-reverse;
-            margin: 11% 11%;
-            padding: 2% 0 2% 0;
+            @include marginPadding(11% 11%, 2% 0 2% 0);
 
             div {
                 width: 45%;
@@ -102,11 +101,9 @@
         }
 
         @media (min-width: $tablet) and (max-width: $notebook) {
-            width: 80%;
-            height: 360px;
+            @include size(80%, 360px);
             flex-direction: row-reverse;
-            margin: 7% 7%;
-            padding: 2% 0 2% 0;
+            @include marginPadding(7% 7%, 2% 0 2% 0);
 
             div {
                 width: 50%;
@@ -128,11 +125,9 @@
         }
 
         @media (min-width: $notebook) and (max-width: $desktop) {
-            width: 70%;
-            height: 380;
+            @include size(70%, 380px);
             flex-direction: row-reverse;
-            margin: 7% 7%;
-            padding: 5% 0 5% 0;
+            @include marginPadding(7% 7%, 5% 0 5% 0);
 
             div {
                 width: 40%;
@@ -154,11 +149,9 @@
         }
 
         @media (min-width: $desktop) {
-            width: 90%;
-            height: 400px;
+            @include size(90%, 400px);
             flex-direction: row-reverse;
-            margin: 4% 4%;
-            padding: 0 0 0 0;
+            @include marginPadding(4% 4%, 0);
 
             div {
                 width: 35%;

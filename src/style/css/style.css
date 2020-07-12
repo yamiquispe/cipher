@@ -359,6 +359,8 @@ footer p {
   flex-direction: column;
   justify-content: center;
   background: white;
+  border-color: #6aa84f;
+  border-style: solid;
 }
 #view .content-view-encode-decode .div-cipher label {
   text-align: center;
@@ -382,6 +384,8 @@ footer p {
 #view .content-view-encode-decode .div-cipher .div-buttons button {
   cursor: pointer;
   background: #ffff8a;
+  border-color: #ff5;
+  border-style: solid;
 }
 @media (max-width: 320px) {
   #view .content-view-encode-decode {
@@ -392,10 +396,10 @@ footer p {
     margin-bottom: -3%;
   }
   #view .content-view-encode-decode .div-cipher {
-    margin-top: 5%;
-    padding: 0 5% 0 5%;
-    border: 5px solid #6aa84f;
+    border-width: 5px;
     border-radius: 8px;
+    margin: 5% 0 0 0;
+    padding: 0 5% 0 5%;
   }
   #view .content-view-encode-decode .div-cipher label {
     font-size: 13px;
@@ -408,7 +412,7 @@ footer p {
     height: 25px;
     font-size: 10px;
     margin: 0 2% 0 2%;
-    border: 2px solid #ff5;
+    border-width: 2px;
     border-radius: 5px;
   }
 }
@@ -421,10 +425,10 @@ footer p {
     margin-bottom: -1%;
   }
   #view .content-view-encode-decode .div-cipher {
-    margin-top: 2%;
-    padding: 0 5% 0 5%;
-    border: 6px solid #6aa84f;
+    border-width: 6px;
     border-radius: 8px;
+    margin: 2% 0 0 0;
+    padding: 0 5% 0 5%;
   }
   #view .content-view-encode-decode .div-cipher label {
     font-size: 13px;
@@ -438,7 +442,7 @@ footer p {
     height: 25px;
     font-size: 11px;
     margin: 0 2% 0 2%;
-    border: 2px solid #ff5;
+    border-width: 2px;
     border-radius: 5px;
   }
 }
@@ -451,10 +455,10 @@ footer p {
     margin-bottom: 0;
   }
   #view .content-view-encode-decode .div-cipher {
-    margin-top: 2%;
-    padding: 0 12% 0 12%;
-    border: 7px solid #6aa84f;
+    border-width: 7px;
     border-radius: 8px;
+    margin: 2% 0 0 0;
+    padding: 0 12% 0 12%;
   }
   #view .content-view-encode-decode .div-cipher label {
     font-size: 14px;
@@ -471,7 +475,7 @@ footer p {
     height: 30px;
     font-size: 12px;
     margin: 0 3% 0 3%;
-    border: 2px solid #ff5;
+    border-width: 2px;
     border-radius: 5px;
   }
 }
@@ -484,10 +488,10 @@ footer p {
     margin-bottom: -1%;
   }
   #view .content-view-encode-decode .div-cipher {
-    padding: 0 12% 0 12%;
-    margin: 2% 5% 0 5%;
-    border: 8px solid #6aa84f;
+    border-width: 8px;
     border-radius: 8px;
+    margin: 2% 5% 0 5%;
+    padding: 0 12% 0 12%;
   }
   #view .content-view-encode-decode .div-cipher label {
     font-size: 15px;
@@ -504,7 +508,7 @@ footer p {
     height: 35px;
     font-size: 13px;
     margin: 0 3% 0 3%;
-    border: 2px solid #ff5;
+    border-width: 2px;
     border-radius: 5px;
   }
 }
@@ -517,10 +521,10 @@ footer p {
     margin-bottom: -1%;
   }
   #view .content-view-encode-decode .div-cipher {
-    padding: 0 12% 0 12%;
-    margin: 2% 7% 0 7%;
-    border: 9px solid #6aa84f;
+    border-width: 9px;
     border-radius: 8px;
+    margin: 2% 7% 0 7%;
+    padding: 0 12% 0 12%;
   }
   #view .content-view-encode-decode .div-cipher label {
     font-size: 16px;
@@ -537,7 +541,7 @@ footer p {
     height: 40px;
     font-size: 14px;
     margin: 0 3% 0 3%;
-    border: 3px solid #ff5;
+    border-width: 3px;
     border-radius: 5px;
   }
 }
@@ -550,10 +554,10 @@ footer p {
     margin-bottom: 0;
   }
   #view .content-view-encode-decode .div-cipher {
-    padding: 0 12% 0 12%;
-    margin: 3% 12% 0 12%;
-    border: 10px solid #6aa84f;
+    border-width: 10px;
     border-radius: 8px;
+    margin: 3% 12% 0 12%;
+    padding: 0 12% 0 12%;
   }
   #view .content-view-encode-decode .div-cipher label {
     font-size: 17px;
@@ -570,7 +574,7 @@ footer p {
     height: 45px;
     font-size: 14px;
     margin: 0 3% 0 3%;
-    border: 4px solid #ff5;
+    border-width: 4px;
     border-radius: 5px;
   }
 }
@@ -970,7 +974,7 @@ footer p {
 @media (min-width: 1024px) and (max-width: 1200px) {
   #view .content-view-error {
     width: 70%;
-    height: 380;
+    height: 380px;
     flex-direction: row-reverse;
     margin: 7% 7%;
     padding: 5% 0 5% 0;
@@ -996,7 +1000,7 @@ footer p {
     height: 400px;
     flex-direction: row-reverse;
     margin: 4% 4%;
-    padding: 0 0 0 0;
+    padding: 0;
   }
   #view .content-view-error div {
     width: 35%;
@@ -1112,7 +1116,7 @@ footer p {
     border-radius: 0 0 3px 3px;
   }
   #container-modal #modal .modal-body {
-    padding: 3% 5% 7% 5%;
+    padding: 3% 12% 7% 12%;
   }
   #container-modal #modal .modal-body div {
     width: 70%;
@@ -1157,7 +1161,7 @@ footer p {
     border-radius: 0 0 4px 4px;
   }
   #container-modal #modal .modal-body {
-    padding: 3% 5% 7% 5%;
+    padding: 3% 10% 7% 10%;
   }
   #container-modal #modal .modal-body div {
     width: 70%;
@@ -1202,7 +1206,7 @@ footer p {
     border-radius: 0 0 5px 5px;
   }
   #container-modal #modal .modal-body {
-    padding: 3% 5% 6% 5%;
+    padding: 3% 9% 6% 9%;
   }
   #container-modal #modal .modal-body div {
     width: 75%;
@@ -1247,7 +1251,7 @@ footer p {
     border-radius: 0 0 6px 6px;
   }
   #container-modal #modal .modal-body {
-    padding: 3% 5% 6% 5%;
+    padding: 3% 8% 6% 8%;
   }
   #container-modal #modal .modal-body div {
     width: 75%;
@@ -1292,7 +1296,7 @@ footer p {
     border-radius: 0 0 6px 6px;
   }
   #container-modal #modal .modal-body {
-    padding: 3% 5% 6% 5%;
+    padding: 3% 7% 6% 7%;
   }
   #container-modal #modal .modal-body div {
     width: 75%;
@@ -1337,7 +1341,7 @@ footer p {
     border-radius: 0 0 6px 6px;
   }
   #container-modal #modal .modal-body {
-    padding: 3% 5% 6% 5%;
+    padding: 3% 7% 6% 7%;
   }
   #container-modal #modal .modal-body div {
     width: 75%;
