@@ -12,14 +12,15 @@ const encode = () => {
       mejor forma de proteger nuestra información es cifrándola.
     </p>
     <div class="div-cipher">
-        <label for="displacement">
+        <label for="displacement-encode">
             Indique el número de posiciones a desplazar: 
         </label>
-        <input type="number" name="displacement" id="displacement" min="1" 
+        <input type="number" id="displacement-encode" min="1" 
         pattern="[0-9]*" inputmode="numeric" 
         title="Ingrese un valor numérico entero mayor a cero.">
-        <label for="message">Escriba mensaje a cifrar: </label>
-        <textarea name="message" id="message" 
+
+        <label for="message-encode">Escriba mensaje a cifrar: </label>
+        <textarea name="message-encode" id="message-encode" 
         title="Ingrese un texto. Solo se cifran letras del abecedario.">
         </textarea> 
         <div class="div-buttons">

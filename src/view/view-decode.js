@@ -12,13 +12,17 @@ const decode = () => {
       mejor forma de proteger nuestra información es cifrándola.
     </p>
     <div class="div-cipher">
-      <label for="displacement">
+      <label for="displacement-decode">
         Indique el número de posiciones de desplazamiento: 
       </label>
-      <input type="number" name="displacement" id="displacement" min="1">
+      <input type="number" id="displacement-decode" min="1"
+      pattern="[0-9]*" inputmode="numeric" 
+      title="Ingrese un valor numérico entero mayor a cero.">
 
-      <label for="message">Escriba mensaje a descifrar: </label>
-      <textarea name="message" id="message"></textarea> 
+      <label for="message-decode">Escriba mensaje a descifrar: </label>
+      <textarea name="message-decode" id="message-decode"
+      title="Ingrese un texto. Solo se cifran letras del abecedario.">
+      </textarea> 
 
       <div class="div-buttons">
         <button type="button" id="button-decode">Descifrar mensaje</button>
