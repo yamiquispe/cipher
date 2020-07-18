@@ -10,6 +10,10 @@ body {
         justify-content: center;
     }
 
+    a, button {
+        outline: none;
+    }
+
     @media (max-width: $blackberry) {
         padding-top: 60px;
 

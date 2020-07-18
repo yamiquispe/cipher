@@ -2,7 +2,6 @@
 // Header
 
 @mixin styleFlex($justifyContent) {
-    display: flex;
     justify-content: $justifyContent;
     align-items: center;
 }
@@ -16,7 +15,6 @@
 
 
 @mixin divIconAndLogo {
-    display: flex;
     align-items: center;
     margin-left: 3%;
 }

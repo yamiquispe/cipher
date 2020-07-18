@@ -10,10 +10,6 @@
   cursor: pointer;
 }
 
-.u-outline-none {
-  outline: none;
-}
-
 @keyframes modal {
   from {
     top: -330px;
@@ -33,6 +29,9 @@ body #view {
   width: 100%;
   margin: 0;
   justify-content: center;
+}
+body a, body button {
+  outline: none;
 }
 @media (max-width: 320px) {
   body {
@@ -444,10 +443,7 @@ header {
   top: 0;
   position: fixed;
 }
-header a {
-  outline: none;
-}
-header a #logo-text {
+header #logo-text {
   border-radius: 5px;
 }
 header ul {
@@ -456,7 +452,10 @@ header ul {
 header ul a {
   text-decoration: none;
   color: black;
-  outline: none;
+}
+header ul li {
+  border-style: solid;
+  border-color: white;
 }
 header ul li:hover {
   background: #979797;
@@ -475,7 +474,6 @@ header .show {
   header div {
     width: 100%;
     height: 60px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -506,8 +504,10 @@ header .show {
   }
   header nav ul li {
     height: 50px;
-    border-top: 1px solid lemonchiffon;
-    display: flex;
+    border-top-width: 1px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
     justify-content: center;
     align-items: center;
   }
@@ -519,7 +519,6 @@ header .show {
   header div {
     width: 100%;
     height: 70px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -550,8 +549,10 @@ header .show {
   }
   header nav ul li {
     height: 50px;
-    border-top: 1px solid lemonchiffon;
-    display: flex;
+    border-top-width: 1.5px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
     justify-content: center;
     align-items: center;
   }
@@ -563,7 +564,6 @@ header .show {
   header div {
     width: 100%;
     height: 80px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -594,8 +594,10 @@ header .show {
   }
   header nav ul li {
     height: 50px;
-    border-top: 1px solid lemonchiffon;
-    display: flex;
+    border-top-width: 2px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
     justify-content: center;
     align-items: center;
   }
@@ -609,7 +611,6 @@ header .show {
   header div {
     width: 25%;
     height: auto;
-    display: flex;
     align-items: center;
     margin-left: 3%;
   }
@@ -631,10 +632,9 @@ header .show {
   header nav li {
     width: 30%;
     height: 50px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    border-width: 2px solid lemonchiffon;
+    border-width: 2px;
     border-radius: 15px;
     margin: 0 3% 0 3%;
   }
@@ -648,7 +648,6 @@ header .show {
   header div {
     width: 25%;
     height: auto;
-    display: flex;
     align-items: center;
     margin-left: 3%;
   }
@@ -670,10 +669,9 @@ header .show {
   header nav li {
     width: 30%;
     height: 50px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    border-width: 2px solid lemonchiffon;
+    border-width: 2px;
     border-radius: 15px;
     margin: 0 3% 0 3%;
   }
@@ -687,7 +685,6 @@ header .show {
   header div {
     width: 25%;
     height: auto;
-    display: flex;
     align-items: center;
     margin-left: 3%;
   }
@@ -709,10 +706,9 @@ header .show {
   header nav li {
     width: 30%;
     height: 50px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    border-width: 2px solid lemonchiffon;
+    border-width: 2px;
     border-radius: 15px;
     margin: 0 3% 0 3%;
   }

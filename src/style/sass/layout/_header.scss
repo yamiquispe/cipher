@@ -5,12 +5,8 @@ header {
     top: 0;
     position: fixed;
 
-    a {
-        outline: none;
-        
-        #logo-text {
-            border-radius: 5px;
-        }
+    #logo-text {
+        border-radius: 5px;
     }
 
     ul {
@@ -19,15 +15,19 @@ header {
         a {
             text-decoration: none;
             color: black;
-            outline: none;
         }
 
-        li:hover {
-            background:rgb(151, 151, 151);
-            transition: all 1s;
+        li {
+            border-style: solid;
+            border-color: white;
 
-            a {
-                color: white;
+            &:hover {
+                background:rgb(151, 151, 151);
+                transition: all 1s;
+
+                a {
+                    color: white;
+                }
             }
         }
     } 
@@ -68,7 +68,10 @@ header {
 
                 li {
                     height: 50px;
-                    border-top: 1px solid lemonchiffon;
+                    border-top-width: 1px;
+                    border-bottom-width: 0;
+                    border-left-width: 0;
+                    border-right-width: 0;
                     @include styleFlex(center);
                 }
             }
@@ -107,7 +110,10 @@ header {
 
                 li {
                     height: 50px;
-                    border-top: 1px solid lemonchiffon;
+                    border-top-width: 1.5px;
+                    border-bottom-width: 0;
+                    border-left-width: 0;
+                    border-right-width: 0;
                     @include styleFlex(center);
                 }
             }
@@ -146,7 +152,10 @@ header {
 
                 li {
                     height: 50px;
-                    border-top: 1px solid lemonchiffon;
+                    border-top-width: 2px;
+                    border-bottom-width: 0;
+                    border-left-width: 0;
+                    border-right-width: 0;
                     @include styleFlex(center);
                 }
             }
@@ -180,7 +189,7 @@ header {
             li {
                 @include size(30%, 50px);
                 @include styleFlex(center);
-                @include border(2px solid lemonchiffon, 15px);
+                @include border(2px, 15px);
                 margin: 0 3% 0 3%;
             }
         }
@@ -213,7 +222,7 @@ header {
             li {
                 @include size(30%, 50px);
                 @include styleFlex(center);
-                @include border(2px solid lemonchiffon, 15px);
+                @include border(2px, 15px);
                 margin: 0 3% 0 3%;
             }
         }
@@ -246,7 +255,7 @@ header {
             li {
                 @include size(30%, 50px);
                 @include styleFlex(center);
-                @include border(2px solid lemonchiffon, 15px);
+                @include border(2px, 15px);
                 margin: 0 3% 0 3%;
             }
         }
