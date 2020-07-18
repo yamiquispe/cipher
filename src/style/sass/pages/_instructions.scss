@@ -1,30 +1,19 @@
-@import '_measures.scss';
-
-
-@mixin style($height, $size) {
-    height: $height;
-    font-size: $size;
-}
-
 
 #view {
     
     .content-view-instructions {
         flex-direction: column;
         justify-content: center;
-        align-content: center;
+        align-items: center;
 
         #container-instructions {
-            display: flex;
             justify-content: center;
 
             section {
-                display: flex;
                 border: 2px solid #00AF80;
                 border-radius: 10px;
 
                 div {
-                    display: flex;
                     justify-content: center;
                     align-items: center;
                 }

@@ -1,0 +1,61 @@
+
+// Header
+
+@mixin styleFlex($justifyContent) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: center;
+}
+
+
+@mixin headerBeeline($height) {
+    height: $height;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@mixin divIconAndLogo {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}
+
+
+@mixin anchorLogoInMenuBurger() {
+    width: inherit;
+    margin-right: -47%;
+}
+
+
+@mixin ulInMenuBurger() {
+    flex-direction: column;
+    margin: 0 0;
+    margin-left: -40px;
+}
+
+
+// Encode - decode - 404
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+@mixin border($borderWidth, $borderRadius) {
+    border-width: $borderWidth;
+    border-radius: $borderRadius;
+}
+
+
+@mixin marginPadding($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+
+// Instructions - footer
+@mixin style($height, $size) {
+    height: $height;
+    font-size: $size;
+}

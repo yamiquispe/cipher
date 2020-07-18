@@ -1,9 +1,7 @@
-@import '_measures.scss';
 
 
 #container-modal {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 1;
@@ -21,20 +19,17 @@
         box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
         animation-name: modal;
         animation-duration: 1s;
-        display: flex;
         flex-direction: column;
         border-radius: 10px;
 
         button {
             background: #c7f3b3ff;
-            cursor: pointer;
             border-radius: 5px;
             border: 1px solid #a2fb7a;
             font-family: 'Athiti', sans-serif;
         }
 
         .modal-header, .modal-footer {
-            display: flex;
             align-items: center;
             background: #6aa84f;
             color: #f2f2f2;
@@ -50,10 +45,9 @@
             #span-close {
                 color: #f2f2f2;
                 font-weight: bold;
-                cursor: pointer;
     
                 :hover {
-                    color: #7f8c8d;
+                    color: #595a5a;
                 }
             }
         }
@@ -64,13 +58,11 @@
         }
 
         .modal-body {
-            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
             div {
-                display: flex;
                 justify-content: center;
                 align-items: center;
                 overflow: scroll;
@@ -258,7 +250,7 @@
             }
 
             .modal-header, .modal-footer {
-               height: 13vh;
+               height: 12.5vh;
             }
 
             .modal-header {
@@ -313,7 +305,7 @@
             }
 
             .modal-header, .modal-footer {
-               height: 14vh;
+               height: 13vh;
             }
 
             .modal-header {
@@ -411,18 +403,6 @@
             #span-close, #button-accept {
                 margin-right: 6%;
             }
-        }
-    }
-
-    @keyframes modal {
-        from {
-            top: -330px;
-            opacity: 0;
-        }
-
-        to {
-            top: 0;
-            opacity: 1;
         }
     }
 }

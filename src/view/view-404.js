@@ -1,8 +1,8 @@
 const pageError = () => {
   const view = `
-    <div>
-        <h1>¡ERROR!</h1>
-        <p>
+    <div class="u-flex">
+        <h1 class="u-center-text">¡ERROR!</h1>
+        <p class="u-center-text">
             Lo sentimos, no hemos podido encontrar el contenido solicitado.
             Inténtalo nuevamente.
         </p>
@@ -13,7 +13,7 @@ const pageError = () => {
   const sectionView = document.createElement('section');
 
   sectionView.innerHTML = view;
-  sectionView.className = 'content-view-error';
+  sectionView.className = 'content-view-error u-flex';
 
   return sectionView;
 };

@@ -1,113 +1,22 @@
-@import '_measures.scss';
-@import '_header.scss';
-@import '_footer.scss';
-@import '_encode-decode.scss';
-@import '_instructions.scss';
-@import '_404.scss';
-@import '_modal.scss';
 
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/measures';
+@import 'abstracts/mixins';
 
-body {
-    margin: 0;
-    font-family: 'Athiti', sans-serif;
-    background: #c7f3b3ff;
+// base
+@import 'base/utilities';
+@import 'base/animations';
+@import 'base/base';
 
-    #view {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
+// components
+@import 'components/modal';
 
-        h1 {
-            text-align: center;
-        }
+// layout
+@import 'layout/header';
+@import 'layout/footer';
 
-        p {
-            text-align: center;
-        }
-    
-        /* View Encode & Decode and View Error */
-        .content-view-encode-decode, .content-view-instructions, .content-view-error {
-            display: flex;
-        }
-    }
-
-    @media (max-width: $blackberry) {
-        padding-top: 60px;
-
-        p {
-            font-size: 13px;
-        }
-
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 16px;
-            }
-        }
-    }
-    @media (min-width: $blackberry) and (max-width: $smartphone) {
-        padding-top: 60px;
-
-        p {
-            font-size: 13px;
-        }
-
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 16px;
-            }
-        }
-    }
-    @media (min-width: $smartphone) and (max-width: $tablet) {
-        padding-top: 70px;
-
-        p {
-            font-size: 14px;
-        }
-
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 18px;
-            }
-        }
-    }
-    @media (min-width: $tablet) and (max-width: $notebook) {
-        padding-top: 80px;
-
-        p {
-            font-size: 15px;
-        }
-
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 22px;
-            }
-        }
-    }
-    @media (min-width: $notebook) and (max-width: $desktop) {
-        padding-top: 80px;
-
-        p {
-            font-size: 16px;
-        }
-
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 24px;
-            }
-        }
-    }
-    @media (min-width: $desktop) {
-        padding-top: 85px;
-
-        p {
-            font-size: 17px;
-        }
-
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 26px;
-            }
-        }
-    }
-}
+// pages
+@import 'pages/encode-decode';
+@import 'pages/instructions';
+@import 'pages/404';

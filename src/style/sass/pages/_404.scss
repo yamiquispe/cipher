@@ -1,16 +1,3 @@
-@import '_measures.scss';
-
-
-@mixin size($width, $height) {
-    width: $width;
-    height: $height;
-}
-
-@mixin marginPadding($margin, $padding) {
-    margin: $margin;
-    padding: $padding;
-}
-
 
 #view {
     
@@ -19,7 +6,6 @@
         align-items: center;
 
         div {
-            display: flex;
             flex-direction: column;
 
             h1 {

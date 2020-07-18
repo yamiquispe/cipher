@@ -1,71 +1,15 @@
-@import '_measures';
-
-
-@mixin styleFlex($justifyContent) {
-    display: flex;
-    justify-content: $justifyContent;
-    align-items: center;
-}
-
-
-@mixin size($width, $height) {
-    width: $width;
-    height: $height;
-}
-
-
-@mixin border($border, $borderRadius) {
-    border: $border;
-    border-radius: $borderRadius;
-}
-
-
-@mixin headerBeeline($height) {
-    height: $height;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-@mixin divIconAndLogo {
-    display: flex;
-    align-items: center;
-    margin-left: 3%;
-}
-
-
-@mixin anchorLogoInMenuBurger() {
-    display: flex;
-    width: inherit;
-    margin-right: -47%;
-}
-
-
-@mixin ulInMenuBurger() {
-    flex-direction: column;
-    margin: 0 0;
-    margin-left: -40px;
-}
-
 
 header {
     @include size(100%, auto);
     background: #efefefff;
-    display: flex;
     top: 0;
     position: fixed;
-
-    #icon-menu {
-        display: none;
-        cursor: pointer;
-    }
 
     a {
         outline: none;
         
         #logo-text {
             border-radius: 5px;
-            cursor: pointer;
         }
     }
 
@@ -79,7 +23,7 @@ header {
         }
 
         li:hover {
-            background:gray;
+            background:rgb(151, 151, 151);
             transition: all 1s;
 
             a {
@@ -221,7 +165,6 @@ header {
             }
 
             a {
-                display: flex;
                 width: 100%;
 
                 #logo-text {
@@ -234,15 +177,11 @@ header {
             @include size(65%, auto);
             margin-right: 1%;
 
-            ul {
-                display: flex;
-
-                li {
-                    @include size(30%, 50px);
-                    @include styleFlex(center);
-                    @include border(2px solid white, 15px);
-                    margin: 0 3% 0 3%;
-                }
+            li {
+                @include size(30%, 50px);
+                @include styleFlex(center);
+                @include border(2px solid lemonchiffon, 15px);
+                margin: 0 3% 0 3%;
             }
         }
     }
@@ -259,7 +198,6 @@ header {
             }
 
             a {
-                display: flex;
                 width: 100%;
 
                 #logo-text {
@@ -272,15 +210,11 @@ header {
             @include size(55%, auto);
             margin-right: 1%;
 
-            ul {
-                display: flex;
-
-                li {
-                    @include size(30%, 50px);
-                    @include styleFlex(center);
-                    @include border(2px solid white, 15px);
-                    margin: 0 3% 0 3%;
-                }
+            li {
+                @include size(30%, 50px);
+                @include styleFlex(center);
+                @include border(2px solid lemonchiffon, 15px);
+                margin: 0 3% 0 3%;
             }
         }
     }
@@ -297,7 +231,6 @@ header {
             }
 
             a {
-                display: flex;
                 width: 100%;
 
                 #logo-text {
@@ -310,15 +243,11 @@ header {
             @include size(50%, auto);
             margin-right: 1%;
 
-            ul {
-                display: flex;
-
-                li {
-                    @include size(30%, 50px);
-                    @include styleFlex(center);
-                    @include border(2px solid white, 15px);
-                    margin: 0 3% 0 3%;
-                }
+            li {
+                @include size(30%, 50px);
+                @include styleFlex(center);
+                @include border(2px solid lemonchiffon, 15px);
+                margin: 0 3% 0 3%;
             }
         }
     }

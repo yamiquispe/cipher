@@ -1,23 +1,10 @@
-@import '_measures.scss';
-
-
-@mixin style($height, $size) {
-    height: $height;
-    font-size: $size;
-}
-
 
 footer {
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     background: #444444ff;
     color: white;
-
-    p {
-        text-align: center;
-    }
 
     @media (max-width: $blackberry) {
         height: 45px;
