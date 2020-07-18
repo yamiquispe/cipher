@@ -1,16 +1,16 @@
 {
   "name": "cipher",
   "version": "1.0.0",
-  "main": "src/index.html",
+  "main": "public/index.html",
   "license": "MIT",
-  "homepage": "https://yamiroot.github.io/cipher/src/index.html#/",
+  "homepage": "https://yamiroot.github.io/cipher/public/index.html#/",
   "scripts": {
-    "htmlhint": "htmlhint src/*.html test/*.html",
+    "htmlhint": "htmlhint public/*.html src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
     "test": "jest --verbose --coverage",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
-    "start": "serve ./src"
+    "start": "serve ./public"
   },
   "dependencies": {
     "htmlhint": "^0.11.0",
