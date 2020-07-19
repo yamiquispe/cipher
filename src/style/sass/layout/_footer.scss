@@ -6,32 +6,31 @@ footer {
     background: $color-black-light;
     color: $color-white;
 
-    @media (max-width: $blackberry) {
+    @include responsiveView(lessBlackberry) {
         height: 45px;
 
         p {
             margin: 0 5% 0 5%;
-            font-size: 13px;
         }
     }
 
-    @media (min-width: $blackberry) and (max-width: $smartphone) {
-        @include style(45px, 15px);
+    @include responsiveView(blackberry-smartphone) {
+        height: 45px;
     }
 
-    @media (min-width: $smartphone) and (max-width: $tablet) {
-        @include style(45px, 16px);
+    @include responsiveView(smartphone-tablet) {
+        height: 45px;
     }
 
-    @media (min-width: $tablet) and (max-width: $notebook) {
-        @include style(47.5px, 17px);
+    @include responsiveView(tablet-notebook) {
+        height: 47.5px;
     }
 
-    @media (min-width: $notebook) and (max-width: $desktop) {
-        @include style(50px, 18px);
+    @include responsiveView(notebook-desktop) {
+        height: 50px;
     }
-    
-    @media (min-width: $desktop) {
-        @include style(52.5px, 19px);
+
+    @include responsiveView(majorDesktop) {
+        height: 52.5px;
     }
 }
