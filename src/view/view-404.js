@@ -7,7 +7,7 @@ const pageError = () => {
             Inténtalo nuevamente.
         </p>
     </div>
-    <img src="./assets/404.gif" alt="404">
+    <img src="../src/assets/404.gif" alt="404">
     `;
 
   const sectionView = document.createElement('section');

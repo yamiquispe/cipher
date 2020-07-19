@@ -114,7 +114,7 @@ body a, body button {
 }
 #container-modal #modal {
   position: relative;
-  background-color: #fefefe;
+  background: white;
   margin: auto;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
   animation-name: modal;
@@ -131,20 +131,19 @@ body a, body button {
 #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
   align-items: center;
   background: #6aa84f;
-  color: #f2f2f2;
 }
 #container-modal #modal .modal-header {
   justify-content: space-between;
+  color: white;
 }
 #container-modal #modal .modal-header h2 {
   font-weight: bold;
 }
 #container-modal #modal .modal-header #span-close {
-  color: #f2f2f2;
   font-weight: bold;
 }
-#container-modal #modal .modal-header #span-close :hover {
-  color: #595a5a;
+#container-modal #modal .modal-header #span-close:hover {
+  color: grey;
 }
 #container-modal #modal .modal-footer {
   border-radius: 0 0 10px 10px;
@@ -458,11 +457,12 @@ header ul li {
   border-color: white;
 }
 header ul li:hover {
-  background: #979797;
+  background: grey;
   transition: all 1s;
 }
 header ul li:hover a {
   color: white;
+  font-weight: bold;
 }
 header .show {
   display: block;
@@ -718,7 +718,7 @@ footer {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background: #444444ff;
+  background: #1c1c1c;
   color: white;
 }
 @media (max-width: 320px) {
@@ -768,12 +768,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   background: white;
-  border-color: #87a37a;
+  border-color: #6aa84f;
   border-style: solid;
 }
 #view .content-view-encode-decode .div-cipher input, #view .content-view-encode-decode .div-cipher textarea {
   background: gainsboro;
-  border: 1px solid gray;
+  border: 1px solid grey;
   border-radius: 5px;
 }
 #view .content-view-encode-decode .div-cipher input:invalid, #view .content-view-encode-decode .div-cipher textarea:invalid {

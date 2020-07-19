@@ -10,7 +10,7 @@
             justify-content: center;
 
             section {
-                border: 2px solid #00AF80;
+                border: 2px solid $color-green-jade;
                 border-radius: 10px;
 
                 div {
@@ -19,7 +19,7 @@
                 }
 
                 .subtitle-instructions {
-                    border-bottom: 2px solid #00AF80;
+                    border-bottom: 2px solid $color-green-jade;
                 }
 
                 .item-instruction {

@@ -10,44 +10,43 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(11, 10, 10, 0.81);
+    background: $color-black-shadow;
 
     #modal {
         position: relative;
-        background-color: #fefefe;
+        background: $color-white;
         margin: auto;
-        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+        box-shadow: 0 0 6px 0 $color-shadow;
         animation-name: modal;
         animation-duration: 1s;
         flex-direction: column;
         border-radius: 10px;
 
         button {
-            background: #c7f3b3ff;
+            background: $color-green-light;
             border-radius: 5px;
-            border: 1px solid #a2fb7a;
+            border: 1px solid $color-green-lemon;
             font-family: 'Athiti', sans-serif;
         }
 
         .modal-header, .modal-footer {
             align-items: center;
-            background: #6aa84f;
-            color: #f2f2f2;
+            background: $color-green-medium;
         }
 
         .modal-header {
             justify-content: space-between;
+            color: $color-white;
 
             h2 {
                 font-weight: bold;
             }
 
             #span-close {
-                color: #f2f2f2;
                 font-weight: bold;
     
-                :hover {
-                    color: #595a5a;
+                &:hover {
+                    color: $color-grey;
                 }
             }
         }
@@ -66,7 +65,7 @@
                 justify-content: center;
                 align-items: center;
                 overflow: scroll;
-                border: 2px solid grey;
+                border: 2px solid $color-grey;
             }
 
             span {

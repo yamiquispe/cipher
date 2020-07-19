@@ -7,18 +7,18 @@
         .div-cipher {
             flex-direction: column;
             justify-content: center;
-            background: white;
-            border-color: #87a37a;
+            background: $color-white;
+            border-color: $color-green-medium;
             border-style: solid;
 
             input, textarea {
-                background: gainsboro;
-                border: 1px solid gray;
+                background: $color-grey-water;
+                border: 1px solid $color-grey;
                 border-radius: 5px;
             }
 
             input:invalid, textarea:invalid {
-                border-color: red;
+                border-color: $color-red-light;
             }
 
             textarea {
@@ -30,8 +30,8 @@
                 margin: 5% 0 5% 0;
 
                 button {
-                    background: #ffff8a;
-                    border-color: #ff5;
+                    background: $color-yellow-light;
+                    border-color: $color-yellow-medium;
                     border-style: solid;
                 }
             }

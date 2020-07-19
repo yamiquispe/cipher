@@ -10,12 +10,12 @@
 
             h1 {
                 font-family: 'Bungee Inline', cursive;
-                color: rgb(53, 255, 137);
-                text-shadow:  0 0 1px #00AF80,
-                              -1px -1px 0 #00AF80,  
-                              1px -1px 0 #00AF80,
-                              -1px 1px 0 #00AF80,
-                              1px 1px 0 #00AF80;
+                color: $color-green-plant;
+                text-shadow:  0 0 1px $color-green-jade,
+                              -1px -1px 0 $color-green-jade,  
+                              1px -1px 0 $color-green-jade,
+                              -1px 1px 0 $color-green-jade,
+                              1px 1px 0 $color-green-jade;
             }
     
             p {

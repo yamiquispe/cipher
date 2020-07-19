@@ -3,8 +3,8 @@ footer {
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: #444444ff;
-    color: white;
+    background: $color-black-light;
+    color: $color-white;
 
     @media (max-width: $blackberry) {
         height: 45px;

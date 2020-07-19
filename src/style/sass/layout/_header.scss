@@ -1,7 +1,7 @@
 
 header {
     @include size(100%, auto);
-    background: #efefefff;
+    background: $color-grey-light;
     top: 0;
     position: fixed;
 
@@ -14,19 +14,20 @@ header {
  
         a {
             text-decoration: none;
-            color: black;
+            color: $color-black;
         }
 
         li {
             border-style: solid;
-            border-color: white;
+            border-color: $color-white;
 
             &:hover {
-                background:rgb(151, 151, 151);
+                background: $color-grey;
                 transition: all 1s;
 
                 a {
-                    color: white;
+                    color: $color-white;
+                    font-weight: bold;
                 }
             }
         }
