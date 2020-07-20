@@ -14,7 +14,7 @@ body {
         outline: none;
     }
 
-    @media (max-width: $blackberry) {
+    @include responsiveView(lessBlackberry) {
         padding-top: 60px;
 
         p {
@@ -28,7 +28,7 @@ body {
         }
     }
 
-    @media (min-width: $blackberry) and (max-width: $smartphone) {
+    @include responsiveView(blackberry-smartphone) {
         padding-top: 60px;
 
         p {
@@ -42,7 +42,7 @@ body {
         }
     }
 
-    @media (min-width: $smartphone) and (max-width: $tablet) {
+    @include responsiveView(smartphone-tablet) {
         padding-top: 70px;
 
         p {
@@ -56,7 +56,7 @@ body {
         }
     }
 
-    @media (min-width: $tablet) and (max-width: $notebook) {
+    @include responsiveView(tablet-notebook) {
         padding-top: 80px;
 
         p {
@@ -70,7 +70,7 @@ body {
         }
     }
 
-    @media (min-width: $notebook) and (max-width: $desktop) {
+    @include responsiveView(notebook-desktop) {
         padding-top: 80px;
 
         p {
@@ -84,7 +84,7 @@ body {
         }
     }
 
-    @media (min-width: $desktop) {
+    @include responsiveView(majorDesktop) {
         padding-top: 85px;
 
         p {

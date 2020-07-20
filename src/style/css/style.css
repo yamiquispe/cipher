@@ -103,30 +103,32 @@ body a, body button {
 #container-modal {
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 10, 10, 0.81);
   position: fixed;
   z-index: 1;
   overflow: auto;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(11, 10, 10, 0.81);
 }
 #container-modal #modal {
+  flex-direction: column;
   position: relative;
   background: white;
-  margin: auto;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
   animation-name: modal;
   animation-duration: 1s;
-  flex-direction: column;
   border-radius: 10px;
 }
 #container-modal #modal button {
   background: #c7f3b3ff;
-  border-radius: 5px;
   border: 1px solid #a2fb7a;
+  border-radius: 5px;
   font-family: "Athiti", sans-serif;
+}
+#container-modal #modal h2, #container-modal #modal span {
+  font-weight: bold;
 }
 #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
   align-items: center;
@@ -135,12 +137,6 @@ body a, body button {
 #container-modal #modal .modal-header {
   justify-content: space-between;
   color: white;
-}
-#container-modal #modal .modal-header h2 {
-  font-weight: bold;
-}
-#container-modal #modal .modal-header #span-close {
-  font-weight: bold;
 }
 #container-modal #modal .modal-header #span-close:hover {
   color: grey;
@@ -161,7 +157,6 @@ body a, body button {
   border: 2px solid grey;
 }
 #container-modal #modal .modal-body span {
-  font-weight: bold;
   margin-top: -3%;
 }
 @media (max-width: 320px) {
@@ -198,12 +193,11 @@ body a, body button {
     font-size: 12px;
     margin-top: -3%;
   }
-  #container-modal #modal .modal-body button {
+  #container-modal #modal .modal-body button, #container-modal #modal .modal-body span {
     margin-top: 6%;
   }
   #container-modal #modal .modal-body span {
     font-size: 11px;
-    margin-top: 6%;
   }
   #container-modal #modal #span-close, #container-modal #modal #button-accept {
     margin-right: 5%;
@@ -504,12 +498,12 @@ header .show {
   }
   header nav ul li {
     height: 50px;
+    justify-content: center;
+    align-items: center;
     border-top-width: 1px;
     border-bottom-width: 0;
     border-left-width: 0;
     border-right-width: 0;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -549,12 +543,12 @@ header .show {
   }
   header nav ul li {
     height: 50px;
+    justify-content: center;
+    align-items: center;
     border-top-width: 1.5px;
     border-bottom-width: 0;
     border-left-width: 0;
     border-right-width: 0;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -594,12 +588,12 @@ header .show {
   }
   header nav ul li {
     height: 50px;
+    justify-content: center;
+    align-items: center;
     border-top-width: 2px;
     border-bottom-width: 0;
     border-left-width: 0;
     border-right-width: 0;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -720,6 +714,7 @@ footer {
   align-items: center;
   background: #1c1c1c;
   color: white;
+  margin-bottom: 0;
 }
 @media (max-width: 320px) {
   footer {
@@ -984,9 +979,10 @@ footer {
   align-items: center;
 }
 #view .content-view-instructions #container-instructions {
-  justify-content: center;
+  align-content: center;
 }
 #view .content-view-instructions #container-instructions section {
+  align-content: center;
   border: 2px solid #00AF80;
   border-radius: 10px;
 }
@@ -1014,13 +1010,11 @@ footer {
   #view .content-view-instructions #container-instructions {
     width: 100%;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
     margin: 5% 0 5% 0;
   }
   #view .content-view-instructions #container-instructions section {
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     margin: 3% 0 8% 0;
     padding: 2% 0 2% 0;
   }
@@ -1058,13 +1052,11 @@ footer {
   #view .content-view-instructions #container-instructions {
     width: 100%;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
     margin: 5% 0 5% 0;
   }
   #view .content-view-instructions #container-instructions section {
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     margin: 3% 0 8% 0;
     padding: 2% 0 2% 0;
   }
@@ -1103,12 +1095,10 @@ footer {
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: center;
   }
   #view .content-view-instructions #container-instructions section {
     width: 40%;
     flex-direction: column;
-    align-content: center;
     margin: 1% 0 8% 0;
     padding: 2% 0 2% 0;
   }
@@ -1147,12 +1137,10 @@ footer {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
   }
   #view .content-view-instructions #container-instructions section {
     width: 40%;
     flex-direction: column;
-    align-content: center;
     margin: 1% 0 7% 0;
     padding: 2% 0 1% 0;
   }
@@ -1191,12 +1179,10 @@ footer {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
   }
   #view .content-view-instructions #container-instructions section {
     width: 40%;
     flex-direction: column;
-    align-content: center;
     margin: 1% 0 7% 0;
     padding: 2% 0 1% 0;
   }
@@ -1235,12 +1221,10 @@ footer {
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: center;
   }
   #view .content-view-instructions #container-instructions section {
     width: 35%;
     flex-direction: column;
-    align-content: center;
     margin: 1% 0 6% 0;
     padding: 2% 0 1% 0;
   }

@@ -1,32 +1,33 @@
 
 
 #container-modal {
-    justify-content: center;
-    align-items: center;
+    @include styleFlex(center);
+    @include size(100%, 100%);
+    background: $color-black-shadow;
     position: fixed;
     z-index: 1;
     overflow: auto;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background: $color-black-shadow;
 
     #modal {
+        flex-direction: column;
         position: relative;
         background: $color-white;
-        margin: auto;
         box-shadow: 0 0 6px 0 $color-shadow;
         animation-name: modal;
         animation-duration: 1s;
-        flex-direction: column;
         border-radius: 10px;
 
         button {
             background: $color-green-light;
-            border-radius: 5px;
             border: 1px solid $color-green-lemon;
+            border-radius: 5px;
             font-family: 'Athiti', sans-serif;
+        }
+
+        h2, span {
+            font-weight: bold;
         }
 
         .modal-header, .modal-footer {
@@ -38,16 +39,8 @@
             justify-content: space-between;
             color: $color-white;
 
-            h2 {
-                font-weight: bold;
-            }
-
-            #span-close {
-                font-weight: bold;
-    
-                &:hover {
-                    color: $color-grey;
-                }
+            #span-close:hover {
+                color: $color-grey;
             }
         }
 
@@ -58,29 +51,24 @@
 
         .modal-body {
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include styleFlex(center);
 
             div {
-                justify-content: center;
-                align-items: center;
+                @include styleFlex(center);
                 overflow: scroll;
                 border: 2px solid $color-grey;
             }
 
             span {
-                font-weight: bold;
                 margin-top: -3%;
             }
         }
 
-        @media (max-width: $blackberry) {
+        @include responsiveView(lessBlackberry) {
             width: 70%;
 
             button {
-                width: 35%;
-                padding: 1%;
-                font-size: 13px;                
+                @include buttonModal(35%, 1%, 13px);             
             }
 
             .modal-header, .modal-footer {
@@ -107,20 +95,16 @@
                 padding: 3% 12% 7% 12%;
 
                 div {
-                    width: 70%;
-                    height: 30px;
-                    border-radius: 5px;
-                    font-size: 12px;
-                    margin-top: -3%;
+                    @include size(70%, 30px);
+                    @include divTextModal(5px, 12px, -3%);
                 }
 
-                button {
+                button, span {
                     margin-top: 6%;
                 }
 
                 span {
                     font-size: 11px;
-                    margin-top: 6%;
                 }
             }
 
@@ -129,13 +113,11 @@
             }
         }
     
-        @media (min-width: $blackberry) and (max-width: $smartphone) {
+        @include responsiveView(blackberry-smartphone) {
             width: 60%;
 
             button {
-                width: 30%;
-                padding: 1%;
-                font-size: 13px;                
+                @include buttonModal(30%, 1%, 13px);               
             }
 
             .modal-header, .modal-footer {
@@ -162,11 +144,8 @@
                 padding: 3% 10% 7% 10%;
 
                 div {
-                    width: 70%;
-                    height: 35px;
-                    border-radius: 5px;
-                    font-size: 12px;
-                    margin-top: -2%;
+                    @include size(70%, 35px);
+                    @include divTextModal(5px, 12px, -2%);
                 }
 
                 button {
@@ -184,13 +163,11 @@
             }
         }
     
-        @media (min-width: $smartphone) and (max-width: $tablet) {
+        @include responsiveView(smartphone-tablet) {
             width: 50%;
 
             button {
-                width: 30%;
-                padding: 1%;
-                font-size: 14px;                
+                @include buttonModal(30%, 1%, 14px);               
             }
 
             .modal-header, .modal-footer {
@@ -217,11 +194,8 @@
                 padding: 3% 9% 6% 9%;
 
                 div {
-                    width: 75%;
-                    height: 40px;
-                    border-radius: 5px;
-                    font-size: 14px;
-                    margin-top: -2%;
+                    @include size(75%, 40px);
+                    @include divTextModal(5px, 14px, -2%);
                 }
 
                 button {
@@ -239,13 +213,11 @@
             }
         }
     
-        @media (min-width: $tablet) and (max-width: $notebook) {
+        @include responsiveView(tablet-notebook) {
             width: 40%;
 
             button {
-                width: 30%;
-                padding: 1%;
-                font-size: 15px;                
+                @include buttonModal(30%, 1%, 15px);                
             }
 
             .modal-header, .modal-footer {
@@ -272,11 +244,8 @@
                 padding: 3% 8% 6% 8%;
 
                 div {
-                    width: 75%;
-                    height: 45px;
-                    border-radius: 5px;
-                    font-size: 15px;
-                    margin-top: -2%;
+                    @include size(75%, 45px);
+                    @include divTextModal(5px, 15px, -2%);
                 }
 
                 button {
@@ -294,13 +263,11 @@
             }
         }
     
-        @media (min-width: $notebook) and (max-width: $desktop) {
+        @include responsiveView(notebook-desktop) {
             width: 35%;
 
             button {
-                width: 30%;
-                padding: 1%;
-                font-size: 16px;                
+                @include buttonModal(30%, 1%, 16px);                
             }
 
             .modal-header, .modal-footer {
@@ -327,11 +294,8 @@
                 padding: 3% 7% 6% 7%;
 
                 div {
-                    width: 75%;
-                    height: 50px;
-                    border-radius: 5px;
-                    font-size: 16px;
-                    margin-top: -2%;
+                    @include size(75%, 50px);
+                    @include divTextModal(5px, 16px, -2%);
                 }
 
                 button {
@@ -348,14 +312,12 @@
                 margin-right: 6%;
             }
         }
-        
-        @media (min-width: $desktop) {
+    
+        @include responsiveView(majorDesktop) {
             width: 30%;
 
             button {
-                width: 30%;
-                padding: 1%;
-                font-size: 17px;                
+                @include buttonModal(30%, 1%, 17px);               
             }
 
             .modal-header, .modal-footer {
@@ -382,11 +344,8 @@
                 padding: 3% 7% 6% 7%;
 
                 div {
-                    width: 75%;
-                    height: 55px;
-                    border-radius: 5px;
-                    font-size: 17px;
-                    margin-top: -2%;
+                    @include size(75%, 55px);
+                    @include divTextModal(5px, 17px, -2%);
                 }
 
                 button {

@@ -37,7 +37,7 @@ header {
         display: block;       
     }
 
-    @media (max-width: $blackberry) {
+    @include responsiveView(lessBlackberry) {
         flex-direction: column;
 
         div {
@@ -69,17 +69,14 @@ header {
 
                 li {
                     height: 50px;
-                    border-top-width: 1px;
-                    border-bottom-width: 0;
-                    border-left-width: 0;
-                    border-right-width: 0;
                     @include styleFlex(center);
+                    @include borderLiMenuBurger(1px);
                 }
             }
         }
-    }
+    }    
 
-    @media (min-width: $blackberry) and (max-width: $smartphone) {
+    @include responsiveView(blackberry-smartphone) {
         flex-direction: column;
 
         div {
@@ -111,17 +108,14 @@ header {
 
                 li {
                     height: 50px;
-                    border-top-width: 1.5px;
-                    border-bottom-width: 0;
-                    border-left-width: 0;
-                    border-right-width: 0;
                     @include styleFlex(center);
+                    @include borderLiMenuBurger(1.5px);
                 }
             }
         }
     }
-        
-    @media (min-width: $smartphone) and (max-width: $tablet) {
+
+    @include responsiveView(smartphone-tablet) {
         flex-direction: column;
 
         div {
@@ -153,17 +147,14 @@ header {
 
                 li {
                     height: 50px;
-                    border-top-width: 2px;
-                    border-bottom-width: 0;
-                    border-left-width: 0;
-                    border-right-width: 0;
                     @include styleFlex(center);
+                    @include borderLiMenuBurger(2px);
                 }
             }
         }
     }
     
-    @media (min-width: $tablet) and (max-width: $notebook) {
+    @include responsiveView(tablet-notebook) {
         @include headerBeeline(82px);
 
         div {
@@ -195,8 +186,8 @@ header {
             }
         }
     }
-        
-    @media (min-width: $notebook) and (max-width: $desktop) {
+    
+    @include responsiveView(notebook-desktop) {
         @include headerBeeline(85px);
 
         div {
@@ -229,7 +220,7 @@ header {
         }
     }
         
-    @media (min-width: $desktop) {
+    @include responsiveView(majorDesktop) {
         @include headerBeeline(88px);
 
         div {

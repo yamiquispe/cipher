@@ -2,8 +2,7 @@
 #view {
     
     .content-view-error {
-        justify-content: center;
-        align-items: center;
+        @include styleFlex(center);
 
         div {
             flex-direction: column;
@@ -23,7 +22,7 @@
             }
         }
 
-        @media (max-width: $blackberry) {
+        @include responsiveView(lessBlackberry) {
             @include size(80%, 300px);
             flex-direction: column;
             @include marginPadding(6% 6%, 3% 0 3% 0);
@@ -42,8 +41,8 @@
                 margin: 5% 5%;
             }
         }
-
-        @media (min-width: $blackberry) and (max-width: $smartphone) {
+    
+        @include responsiveView(blackberry-smartphone) {
             @include size(75%, 320px);
             flex-direction: column;
             @include marginPadding(10% 10%, 2% 0 2% 0);
@@ -61,8 +60,8 @@
                 margin: 5% 5%;
             }
         }
-
-        @media (min-width: $smartphone) and (max-width: $tablet) {
+    
+        @include responsiveView(smartphone-tablet) {
             @include size(85%, 340px);
             flex-direction: row-reverse;
             @include marginPadding(11% 11%, 2% 0 2% 0);
@@ -85,8 +84,8 @@
                 border-radius: 5px;
             }
         }
-
-        @media (min-width: $tablet) and (max-width: $notebook) {
+    
+        @include responsiveView(tablet-notebook) {
             @include size(80%, 360px);
             flex-direction: row-reverse;
             @include marginPadding(7% 7%, 2% 0 2% 0);
@@ -109,8 +108,8 @@
                 border-radius: 5px;
             }
         }
-
-        @media (min-width: $notebook) and (max-width: $desktop) {
+    
+        @include responsiveView(notebook-desktop) {
             @include size(70%, 380px);
             flex-direction: row-reverse;
             @include marginPadding(7% 7%, 5% 0 5% 0);
@@ -133,8 +132,8 @@
                 border-radius: 5px;
             }
         }
-
-        @media (min-width: $desktop) {
+    
+        @include responsiveView(majorDesktop) {
             @include size(90%, 400px);
             flex-direction: row-reverse;
             @include marginPadding(4% 4%, 0);

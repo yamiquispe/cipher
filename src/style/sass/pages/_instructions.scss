@@ -3,19 +3,18 @@
     
     .content-view-instructions {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include styleFlex(center);
 
         #container-instructions {
-            justify-content: center;
+            align-content: center;
 
             section {
+                align-content: center;
                 border: 2px solid $color-green-jade;
                 border-radius: 10px;
 
                 div {
-                    justify-content: center;
-                    align-items: center;
+                    @include styleFlex(center);
                 }
 
                 .subtitle-instructions {
@@ -30,7 +29,7 @@
             }
         }
 
-        @media (max-width: $blackberry) {
+        @include responsiveView(lessBlackberry) {
             width: 85%;
 
             #container-description-web {
@@ -45,15 +44,12 @@
             #container-instructions {
                 width: 100%;
                 flex-direction: column;
-                align-content: center;
+                justify-content: center;
                 margin: 5% 0 5% 0;
 
                 section {
                     flex-direction: column;
-                    justify-content: center;
-                    align-content: center;
-                    margin: 3% 0 8% 0;
-                    padding: 2% 0 2% 0;
+                    @include marginPadding(3% 0 8% 0, 2% 0 2% 0);
 
                     .subtitle-instructions {
                         width: 100%;
@@ -67,8 +63,7 @@
 
                     .item-instruction {
                         flex-direction: column;
-                        margin: 3% 0 3% 0;
-                        padding: 0 5% 0 5%;
+                        @include marginPadding(3% 0 3% 0, 0 5% 0 5%);
 
                         img {
                             width: 12vw;
@@ -82,7 +77,7 @@
             }
         }
     
-        @media (min-width: $blackberry) and (max-width: $smartphone) {
+        @include responsiveView(blackberry-smartphone) {
             width: 75%;
 
             #container-description-web {
@@ -97,15 +92,12 @@
             #container-instructions {
                 width: 100%;
                 flex-direction: column;
-                align-content: center;
+                justify-content: center;
                 margin: 5% 0 5% 0;
 
                 section {
                     flex-direction: column;
-                    justify-content: center;
-                    align-content: center;
-                    margin: 3% 0 8% 0;
-                    padding: 2% 0 2% 0;
+                    @include marginPadding(3% 0 8% 0, 2% 0 2% 0);
 
                     .subtitle-instructions {
                         width: 100%;
@@ -119,8 +111,7 @@
 
                     .item-instruction {
                         flex-direction: column;
-                        margin: 3% 0 3% 0;
-                        padding: 0 7% 0 7%;
+                        @include marginPadding(3% 0 3% 0, 0 7% 0 7%);
 
                         img {
                             width: 10vw;
@@ -134,7 +125,7 @@
             }
         }
     
-        @media (min-width: $smartphone) and (max-width: $tablet) {
+        @include responsiveView(smartphone-tablet) {
             width: 90%;
 
             #container-description-web {
@@ -150,14 +141,11 @@
                 width: 100%;
                 flex-direction: row;
                 justify-content: space-evenly;
-                align-content: center;
 
                 section {
                     width: 40%;
                     flex-direction: column;
-                    align-content: center;
-                    margin: 1% 0 8% 0;
-                    padding: 2% 0 2% 0;
+                    @include marginPadding(1% 0 8% 0, 2% 0 2% 0);
 
                     .subtitle-instructions {
                         width: 100%;
@@ -171,8 +159,7 @@
 
                     .item-instruction {
                         flex-direction: column;
-                        margin: 3% 0 3% 0;
-                        padding: 0 4% 0 4%;
+                        @include marginPadding(3% 0 3% 0, 0 4% 0 4%);
 
                         img {
                             width: 7vw;
@@ -186,7 +173,7 @@
             }
         }
     
-        @media (min-width: $tablet) and (max-width: $notebook) {
+        @include responsiveView(tablet-notebook) {
             width: 80%;
 
             #container-description-web {
@@ -202,14 +189,11 @@
                 width: 100%;
                 flex-direction: row;
                 justify-content: space-around;
-                align-content: center;
 
                 section {
                     width: 40%;
                     flex-direction: column;
-                    align-content: center;
-                    margin: 1% 0 7% 0;
-                    padding: 2% 0 1% 0;
+                    @include marginPadding(1% 0 7% 0, 2% 0 1% 0);
 
                     .subtitle-instructions {
                         width: 100%;
@@ -223,8 +207,7 @@
 
                     .item-instruction {
                         flex-direction: column;
-                        margin: 3% 0 3% 0;
-                        padding: 0 8% 0 8%;
+                        @include marginPadding(3% 0 3% 0, 0 8% 0 8%);
 
                         img {
                             width: 5vw;
@@ -238,7 +221,7 @@
             }
         }
     
-        @media (min-width: $notebook) and (max-width: $desktop) {
+        @include responsiveView(notebook-desktop) {
             width: 80%;
 
             #container-description-web {
@@ -254,14 +237,11 @@
                 width: 100%;
                 flex-direction: row;
                 justify-content: space-around;
-                align-content: center;
 
                 section {
                     width: 40%;
                     flex-direction: column;
-                    align-content: center;
-                    margin: 1% 0 7% 0;
-                    padding: 2% 0 1% 0;
+                    @include marginPadding(1% 0 7% 0, 2% 0 1% 0);
 
                     .subtitle-instructions {
                         width: 100%;
@@ -275,8 +255,7 @@
 
                     .item-instruction {
                         flex-direction: column;
-                        margin: 3% 0 3% 0;
-                        padding: 0 9% 0 9%;
+                        @include marginPadding(3% 0 3% 0, 0 9% 0 9%);
 
                         img {
                             width: 4vw;
@@ -289,8 +268,8 @@
                 }
             }
         }
-        
-        @media (min-width: $desktop) {
+    
+        @include responsiveView(majorDesktop) {
             width: 80%;
 
             #container-description-web {
@@ -306,14 +285,11 @@
                 width: 100%;
                 flex-direction: row;
                 justify-content: space-evenly;
-                align-content: center;
 
                 section {
                     width: 35%;
                     flex-direction: column;
-                    align-content: center;
-                    margin: 1% 0 6% 0;
-                    padding: 2% 0 1% 0;
+                    @include marginPadding(1% 0 6% 0, 2% 0 1% 0);
 
                     .subtitle-instructions {
                         width: 100%;
@@ -327,8 +303,7 @@
 
                     .item-instruction {
                         flex-direction: column;
-                        margin: 3% 0 3% 0;
-                        padding: 0 9% 0 9%;
+                        @include marginPadding(3% 0 3% 0, 0 9% 0 9%);
 
                         img {
                             display: flex;

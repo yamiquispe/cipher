@@ -37,7 +37,7 @@
             }
         }
 
-        @media (max-width: $blackberry) {
+        @include responsiveView(lessBlackberry) {
             width: 80%;
             margin: 3% 0 11% 0;
 
@@ -59,16 +59,15 @@
                 }
     
                 button {
-                    width: 45%;
-                    height: 25px;
+                    @include size(45%, 25px);
                     font-size: 10px;
                     margin: 0 2% 0 2%;
                     @include border(2px, 5px);
                 }
-            }            
+            } 
         }
-
-        @media (min-width: $blackberry) and (max-width: $smartphone) {
+    
+        @include responsiveView(blackberry-smartphone) {
             width: 80%;
             margin: 7% 0 9% 0;
 
@@ -95,10 +94,10 @@
                     margin: 0 2% 0 2%;
                     @include border(2px, 5px);
                 }
-            }            
+            }    
         }
-
-        @media (min-width: $smartphone) and (max-width: $tablet) {
+    
+        @include responsiveView(smartphone-tablet) {
             width: 70%;
             margin: 5% 0 7% 0;
 
@@ -129,10 +128,10 @@
                     margin: 0 3% 0 3%;
                     @include border(2px, 5px);
                 }
-            }            
+            } 
         }
-
-        @media (min-width: $tablet) and (max-width: $notebook) {
+    
+        @include responsiveView(tablet-notebook) {
             width: 60%;
             margin: 3% 0 6% 0;
 
@@ -163,10 +162,10 @@
                     margin: 0 3% 0 3%;
                     @include border(2px, 5px);
                 }
-            }            
+            }   
         }
-
-        @media (min-width: $notebook) and (max-width: $desktop) {
+    
+        @include responsiveView(notebook-desktop) {
             width: 60%;
             margin: 3% 0 5% 0;
 
@@ -197,10 +196,10 @@
                     margin: 0 3% 0 3%;
                     @include border(3px, 5px);
                 }
-            }          
+            }     
         }
-
-        @media (min-width: $desktop) {
+    
+        @include responsiveView(majorDesktop) {
             width: 65%;
             margin: 3% 0 5% 0;
 
@@ -231,7 +230,7 @@
                     margin: 0 3% 0 3%;
                     @include border(4px, 5px);
                 }
-            }        
+            } 
         }
     }
 }
