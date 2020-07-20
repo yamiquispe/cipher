@@ -6,14 +6,14 @@
   "homepage": "https://yamiroot.github.io/cipher/public/index.html#/",
   "scripts": {
     "htmlhint": "htmlhint public/*.html src/*.html test/*.html",
+    "stylelint": "stylelint --aei src/**/*.css src/**/*.scss",
     "eslint": "eslint --ext .js src/ test/",
-    "pretest": "npm run eslint && npm run htmlhint",
+    "pretest": "npm run eslint && npm run htmlhint && npm run stylelint",
     "test": "jest --verbose --coverage",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
     "start": "serve ./public"
   },
   "dependencies": {
-    "htmlhint": "^0.11.0",
     "jest": "^24.9.0",
     "opener": "^1.5.1",
     "sass": "^1.26.8",
@@ -21,6 +21,9 @@
   },
   "devDependencies": {
     "eslint": "^7.3.1",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "htmlhint": "^0.14.1",
+    "stylelint": "^13.6.1",
+    "stylelint-scss": "^3.18.0"
   }
 }
