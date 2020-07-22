@@ -1,4 +1,3 @@
-import cipher from '../js/cipher.js';
 import {characterInvalid} from './character-invalid.js';
 
 
