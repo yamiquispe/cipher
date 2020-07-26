@@ -1,3 +1,4 @@
+
 const pageError = () => {
   const view = `
     <div class="u-flex">
@@ -17,5 +18,6 @@ const pageError = () => {
 
   return sectionView;
 };
+
 
 export default pageError;

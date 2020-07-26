@@ -71,6 +71,3 @@ window.cipher = {
   },
 
 };
-
-
-module.exports = cipher;
