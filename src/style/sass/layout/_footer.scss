@@ -1,10 +1,11 @@
 
 footer {
     width: 100%;
+    position: absolute;
+    bottom: 0;
     @include styleFlex(center);
     background: $color-black-light;
     color: $color-white;
-    margin-bottom: 0;
 
     @include responsiveView(lessBlackberry) {
         height: 45px;
