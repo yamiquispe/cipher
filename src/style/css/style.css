@@ -29,6 +29,7 @@ body #view {
   width: 100%;
   margin: 0;
   justify-content: center;
+  align-items: center;
 }
 body a, body button {
   outline: none;
@@ -169,7 +170,7 @@ body a, body button {
     font-size: 13px;
   }
   #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
-    height: 10vh;
+    height: 53px;
   }
   #container-modal #modal .modal-header {
     border-radius: 3px 3px 0 0;
@@ -213,7 +214,7 @@ body a, body button {
     font-size: 13px;
   }
   #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
-    height: 11vh;
+    height: 58px;
   }
   #container-modal #modal .modal-header {
     border-radius: 4px 4px 0 0;
@@ -258,7 +259,7 @@ body a, body button {
     font-size: 14px;
   }
   #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
-    height: 12vh;
+    height: 63px;
   }
   #container-modal #modal .modal-header {
     border-radius: 5px 5px 0 0;
@@ -303,7 +304,7 @@ body a, body button {
     font-size: 15px;
   }
   #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
-    height: 12.5vh;
+    height: 68px;
   }
   #container-modal #modal .modal-header {
     border-radius: 6px 6px 0 0;
@@ -348,7 +349,7 @@ body a, body button {
     font-size: 16px;
   }
   #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
-    height: 13vh;
+    height: 70px;
   }
   #container-modal #modal .modal-header {
     border-radius: 6px 6px 0 0;
@@ -393,7 +394,7 @@ body a, body button {
     font-size: 17px;
   }
   #container-modal #modal .modal-header, #container-modal #modal .modal-footer {
-    height: 12vh;
+    height: 73px;
   }
   #container-modal #modal .modal-header {
     border-radius: 6px 6px 0 0;
@@ -765,11 +766,14 @@ footer {
   border: 1px solid grey;
   border-radius: 5px;
 }
+#view .content-view-encode-decode .div-cipher textarea {
+  resize: none;
+}
 #view .content-view-encode-decode .div-cipher input:invalid, #view .content-view-encode-decode .div-cipher textarea:invalid {
   border-color: red;
 }
-#view .content-view-encode-decode .div-cipher textarea {
-  resize: none;
+#view .content-view-encode-decode .div-cipher input:focus, #view .content-view-encode-decode .div-cipher textarea:focus {
+  border: 1px solid green;
 }
 #view .content-view-encode-decode .div-cipher .div-buttons {
   justify-content: center;
@@ -803,7 +807,7 @@ footer {
   }
   #view .content-view-encode-decode .div-cipher button {
     width: 45%;
-    height: 25px;
+    height: 30px;
     font-size: 10px;
     margin: 0 2% 0 2%;
     border-width: 2px;

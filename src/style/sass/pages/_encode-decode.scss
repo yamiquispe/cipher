@@ -17,12 +17,16 @@
                 border-radius: 5px;
             }
 
+            textarea {
+                resize: none;
+            }
+
             input:invalid, textarea:invalid {
                 border-color: $color-red-light;
             }
 
-            textarea {
-                resize: none;
+            input:focus, textarea:focus { 
+                border: 1px solid green;
             }
 
             .div-buttons {
@@ -59,7 +63,7 @@
                 }
     
                 button {
-                    @include size(45%, 25px);
+                    @include size(45%, 30px);
                     font-size: 10px;
                     margin: 0 2% 0 2%;
                     @include border(2px, 5px);
