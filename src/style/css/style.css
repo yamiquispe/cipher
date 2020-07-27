@@ -1310,6 +1310,7 @@ footer {
     margin-top: -3%;
   }
   #view .content-view-error img {
+    width: 80%;
     border-radius: 5px;
     margin: 5% 5%;
   }
@@ -1334,6 +1335,7 @@ footer {
     margin-top: -7%;
   }
   #view .content-view-error img {
+    width: 70%;
     border-radius: 5px;
   }
 }
@@ -1357,6 +1359,7 @@ footer {
     margin-top: -7%;
   }
   #view .content-view-error img {
+    width: 60%;
     border-radius: 5px;
   }
 }
@@ -1380,6 +1383,7 @@ footer {
     margin-top: -10%;
   }
   #view .content-view-error img {
+    width: 45%;
     border-radius: 5px;
   }
 }
