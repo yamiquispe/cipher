@@ -32,7 +32,6 @@ body {
 }
 body #view {
   width: 100%;
-  margin: 0;
   justify-content: center;
   align-items: center;
 }
@@ -46,7 +45,10 @@ body a, body button {
   body p {
     font-size: 13px;
   }
-  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+  body #view {
+    margin: 5% 0 25% 0;
+  }
+  body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 16px;
   }
 }
@@ -57,7 +59,10 @@ body a, body button {
   body p {
     font-size: 13px;
   }
-  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+  body #view {
+    margin: 5% 0 15% 0;
+  }
+  body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 16px;
   }
 }
@@ -68,7 +73,10 @@ body a, body button {
   body p {
     font-size: 14px;
   }
-  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+  body #view {
+    margin: 5% 0 10% 0;
+  }
+  body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 18px;
   }
 }
@@ -79,7 +87,10 @@ body a, body button {
   body p {
     font-size: 15px;
   }
-  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+  body #view {
+    margin: 5% 0 10% 0;
+  }
+  body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 22px;
   }
 }
@@ -90,7 +101,10 @@ body a, body button {
   body p {
     font-size: 16px;
   }
-  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+  body #view {
+    margin: 4% 0 7% 0;
+  }
+  body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 24px;
   }
 }
@@ -101,7 +115,10 @@ body a, body button {
   body p {
     font-size: 17px;
   }
-  body .content-view-encode-decode h1, body .content-view-instructions h1 {
+  body #view {
+    margin: 2.5% 0 5% 0;
+  }
+  body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 26px;
   }
 }

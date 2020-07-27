@@ -11,7 +11,6 @@ body {
 
     #view {
         width: 100%;
-        margin: 0;
         justify-content: center;
         align-items: center;
     }
@@ -27,9 +26,13 @@ body {
             font-size: 13px;
         }
 
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 16px;
+        #view {
+            margin: 5% 0 25% 0;   
+            
+            .content-view-encode-decode, .content-view-instructions {
+                h1 {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -41,9 +44,13 @@ body {
             font-size: 13px;
         }
 
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 16px;
+        #view {
+            margin: 5% 0 15% 0;    
+            
+            .content-view-encode-decode, .content-view-instructions {
+                h1 {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -55,9 +62,13 @@ body {
             font-size: 14px;
         }
 
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 18px;
+        #view {
+            margin: 5% 0 10% 0; 
+
+            .content-view-encode-decode, .content-view-instructions {
+                h1 {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -69,9 +80,13 @@ body {
             font-size: 15px;
         }
 
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 22px;
+        #view {
+            margin: 5% 0 10% 0; 
+
+            .content-view-encode-decode, .content-view-instructions {
+                h1 {
+                    font-size: 22px;
+                }
             }
         }
     }
@@ -83,9 +98,13 @@ body {
             font-size: 16px;
         }
 
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 24px;
+        #view {
+            margin: 4% 0 7% 0; 
+
+            .content-view-encode-decode, .content-view-instructions {
+                h1 {
+                    font-size: 24px;
+                }
             }
         }
     }
@@ -97,9 +116,14 @@ body {
             font-size: 17px;
         }
 
-        .content-view-encode-decode, .content-view-instructions {
-            h1 {
-                font-size: 26px;
+
+        #view {
+            margin: 2.5% 0 5% 0; 
+
+            .content-view-encode-decode, .content-view-instructions {
+                h1 {
+                    font-size: 26px;
+                }
             }
         }
     }
