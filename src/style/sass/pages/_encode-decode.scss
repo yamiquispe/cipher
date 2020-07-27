@@ -3,6 +3,7 @@
    
     .content-view-encode-decode {
         flex-direction: column;
+        @include styleFlex(center);
 
         .div-cipher {
             flex-direction: column;

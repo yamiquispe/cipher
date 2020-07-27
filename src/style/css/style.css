@@ -46,7 +46,7 @@ body a, body button {
     font-size: 13px;
   }
   body #view {
-    margin: 5% 0 25% 0;
+    margin: 4% 0 25% 0;
   }
   body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 16px;
@@ -74,7 +74,7 @@ body a, body button {
     font-size: 14px;
   }
   body #view {
-    margin: 5% 0 10% 0;
+    margin: 4% 0 10% 0;
   }
   body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 18px;
@@ -88,7 +88,7 @@ body a, body button {
     font-size: 15px;
   }
   body #view {
-    margin: 5% 0 10% 0;
+    margin: 3% 0 8% 0;
   }
   body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 22px;
@@ -102,7 +102,7 @@ body a, body button {
     font-size: 16px;
   }
   body #view {
-    margin: 4% 0 7% 0;
+    margin: 2% 0 7% 0;
   }
   body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 24px;
@@ -116,7 +116,7 @@ body a, body button {
     font-size: 17px;
   }
   body #view {
-    margin: 2.5% 0 5% 0;
+    margin: 1% 0 5% 0;
   }
   body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 26px;
@@ -776,6 +776,8 @@ footer {
 
 #view .content-view-encode-decode {
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #view .content-view-encode-decode .div-cipher {
   flex-direction: column;
