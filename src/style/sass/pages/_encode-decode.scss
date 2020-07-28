@@ -64,7 +64,7 @@
                 }
     
                 button {
-                    @include size(45%, 30px);
+                    @include size(50%, 30px);
                     font-size: 10px;
                     margin: 0 2% 0 2%;
                     @include border(2px, 5px);
@@ -94,7 +94,7 @@
                 }
     
                 button {
-                    @include size(43%, 25px);
+                    @include size(47%, 25px);
                     font-size: 11px;
                     margin: 0 2% 0 2%;
                     @include border(2px, 5px);
@@ -128,7 +128,7 @@
                 }
     
                 button {
-                    @include size(42%, 30px);
+                    @include size(45%, 30px);
                     font-size: 12px;
                     margin: 0 3% 0 3%;
                     @include border(2px, 5px);
@@ -162,7 +162,7 @@
                 }
     
                 button {
-                    @include size(40%, 35px);
+                    @include size(42.5%, 35px);
                     font-size: 13px;
                     margin: 0 3% 0 3%;
                     @include border(2px, 5px);
@@ -196,7 +196,7 @@
                 }
     
                 button {
-                    @include size(37.5%, 40px);
+                    @include size(40%, 40px);
                     font-size: 14px;
                     margin: 0 3% 0 3%;
                     @include border(3px, 5px);
@@ -230,7 +230,7 @@
                 }
     
                 button {
-                    @include size(35%, 45px);
+                    @include size(38%, 45px);
                     font-size: 14px;
                     margin: 0 3% 0 3%;
                     @include border(4px, 5px);

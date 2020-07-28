@@ -20,6 +20,12 @@
     opacity: 1;
   }
 }
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 html {
   min-height: 100%;
   position: relative;
@@ -452,6 +458,27 @@ body a, body button {
   }
 }
 
+#loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: greenyellow;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+#loader img {
+  width: 30%;
+}
+
+.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -831,7 +858,7 @@ footer {
     height: 23px;
   }
   #view .content-view-encode-decode .div-cipher button {
-    width: 45%;
+    width: 50%;
     height: 30px;
     font-size: 10px;
     margin: 0 2% 0 2%;
@@ -861,7 +888,7 @@ footer {
     height: 23px;
   }
   #view .content-view-encode-decode .div-cipher button {
-    width: 43%;
+    width: 47%;
     height: 25px;
     font-size: 11px;
     margin: 0 2% 0 2%;
@@ -894,7 +921,7 @@ footer {
     height: 50px;
   }
   #view .content-view-encode-decode .div-cipher button {
-    width: 42%;
+    width: 45%;
     height: 30px;
     font-size: 12px;
     margin: 0 3% 0 3%;
@@ -927,7 +954,7 @@ footer {
     height: 55px;
   }
   #view .content-view-encode-decode .div-cipher button {
-    width: 40%;
+    width: 42.5%;
     height: 35px;
     font-size: 13px;
     margin: 0 3% 0 3%;
@@ -960,7 +987,7 @@ footer {
     height: 60px;
   }
   #view .content-view-encode-decode .div-cipher button {
-    width: 37.5%;
+    width: 40%;
     height: 40px;
     font-size: 14px;
     margin: 0 3% 0 3%;
@@ -993,7 +1020,7 @@ footer {
     height: 65px;
   }
   #view .content-view-encode-decode .div-cipher button {
-    width: 35%;
+    width: 38%;
     height: 45px;
     font-size: 14px;
     margin: 0 3% 0 3%;

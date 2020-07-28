@@ -13,6 +13,9 @@ const hashChange = () => {
 
 // load: Evento que se dispara al cargar el documento.
 window.addEventListener('load', () => {
+  const loader = document.querySelector('#loader');
+  loader.classList.add('hidden');
+
   header();
   hashChange();
 });
