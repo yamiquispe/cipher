@@ -1,0 +1,15 @@
+{
+    "name": "Cipher",
+    "short_name": "Cipher",
+    "icons": [
+        {
+            "src": "src/assets/logo.png",
+            "sizes": "1256x1540",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/encode",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
