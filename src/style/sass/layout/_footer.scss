@@ -6,32 +6,4 @@ footer {
     @include styleFlex(center);
     background: $color-black-light;
     color: $color-white;
-
-    @include responsiveView(lessBlackberry) {
-        height: 45px;
-
-        p {
-            margin: 0 5% 0 5%;
-        }
-    }
-
-    @include responsiveView(blackberry-smartphone) {
-        height: 45px;
-    }
-
-    @include responsiveView(smartphone-tablet) {
-        height: 45px;
-    }
-
-    @include responsiveView(tablet-notebook) {
-        height: 47.5px;
-    }
-
-    @include responsiveView(notebook-desktop) {
-        height: 50px;
-    }
-
-    @include responsiveView(majorDesktop) {
-        height: 52.5px;
-    }
 }

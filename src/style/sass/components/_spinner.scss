@@ -5,19 +5,133 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: greenyellow;
+    background: $color-green-light;
     position: fixed;
     z-index: 99;
     top: 0;
     left: 0;
 
-    img {
-        width: 30%;
+    #spinner {
+        background:$color-grey-light;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        :after, :before {
+            content: '';
+            display: block;
+            border-radius: 50%;
+        }
+
+        div {
+            &:before, &:after {
+                position: absolute;
+                background: $color-green-medium;
+                animation: pulse 2s linear infinite;
+                opacity: 0;
+            }
+    
+            &:after {
+                animation: pulse 2s linear 2.3s infinite;
+            }
+        }
+
+        @include responsiveView(lessBlackberry) {
+            @include size(12vw, 12vw);
+
+            :after, :before {
+                @include size(12vw, 12vw);
+            }
+
+            div {
+                &:before, &:after {
+                    margin-top: -6vw;
+                    margin-left: -6vw;
+                }
+            }
+        }
+    
+        @include responsiveView(blackberry-smartphone) {
+            @include size(10vw, 10vw);
+
+            :after, :before {
+                @include size(10vw, 10vw);
+            }
+
+            div {
+                &:before, &:after {
+                    margin-top: -5vw;
+                    margin-left: -5vw;
+                }
+            }
+        }
+    
+        @include responsiveView(smartphone-tablet) {
+            @include size(8vw, 8vw);
+
+            :after, :before {
+                @include size(8vw, 8vw);
+            }
+
+            div {
+                &:before, &:after {
+                    margin-top: -4vw;
+                    margin-left: -4vw;
+                }
+            }
+        }
+    
+        @include responsiveView(tablet-notebook) {
+            @include size(8vw, 8vw);
+
+            :after, :before {
+                @include size(8vw, 8vw);
+            }
+
+            div {
+                &:before, &:after {
+                    margin-top: -4vw;
+                    margin-left: -4vw;
+                }
+            }
+        }
+    
+        @include responsiveView(notebook-desktop) {
+            @include size(6vw, 6vw);
+
+            :after, :before {
+                @include size(6vw, 6vw);
+            }
+
+            div {
+                &:before, &:after {
+                    margin-top: -3vw;
+                    margin-left: -3vw;
+                }
+            }
+        }
+    
+        @include responsiveView(majorDesktop) {
+            @include size(4vw, 4vw);
+
+            :after, :before {
+                @include size(4vw, 4vw);
+            }
+
+            div {
+                &:before, &:after {
+                    margin-top: -2vw;
+                    margin-left: -2vw;
+                }
+            }
+        }
     }
 }
 
 
 .hidden {
-    animation: fadeOut 1s;
+    animation: fadeOut 3s;
     animation-fill-mode: forwards;
 }

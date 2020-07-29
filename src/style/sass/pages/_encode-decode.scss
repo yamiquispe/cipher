@@ -51,6 +51,7 @@
             }
 
             .div-cipher {
+                width: 90%;
                 @include border(5px, 8px);
                 @include marginPadding(5% 0 0 0, 0 5% 0 5%);
 
@@ -81,6 +82,7 @@
             }
 
             .div-cipher {
+                width: 85%;
                 @include border(6px, 8px);
                 @include marginPadding(2% 0 0 0, 0 5% 0 5%);
 
@@ -111,6 +113,7 @@
             }
 
             .div-cipher {
+                width: 78%;
                 @include border(7px, 8px);
                 @include marginPadding(2% 0 0 0, 0 12% 0 12%);
 
@@ -145,6 +148,7 @@
             }
 
             .div-cipher {
+                width: 70%;
                 @include border(8px, 8px);
                 @include marginPadding(2% 5% 0 5%, 0 12% 0 12%);
 
@@ -179,6 +183,7 @@
             }
 
             .div-cipher {
+                width: 60%;
                 @include border(9px, 8px);
                 @include marginPadding(2% 7% 0 7%, 0 12% 0 12%);
 
@@ -213,6 +218,7 @@
             }
 
             .div-cipher {
+                width: 50%;
                 @include border(10px, 8px);
                 @include marginPadding(3% 12% 0 12%, 0 12% 0 12%);
 

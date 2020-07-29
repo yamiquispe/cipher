@@ -26,6 +26,16 @@
     visibility: hidden;
   }
 }
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
 html {
   min-height: 100%;
   position: relative;
@@ -52,7 +62,7 @@ body a, body button {
     font-size: 13px;
   }
   body #view {
-    margin: 4% 0 25% 0;
+    margin: 4% 0 15vh 0;
   }
   body #view .content-view-encode-decode h1, body #view .content-view-instructions h1 {
     font-size: 16px;
@@ -464,18 +474,121 @@ body a, body button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: greenyellow;
+  background: #c7f3b3ff;
   position: fixed;
   z-index: 99;
   top: 0;
   left: 0;
 }
-#loader img {
-  width: 30%;
+#loader #spinner {
+  background: #efefefff;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loader #spinner :after, #loader #spinner :before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+}
+#loader #spinner div:before, #loader #spinner div:after {
+  position: absolute;
+  background: #6aa84f;
+  animation: pulse 2s linear infinite;
+  opacity: 0;
+}
+#loader #spinner div:after {
+  animation: pulse 2s linear 2.3s infinite;
+}
+@media (max-width: 320px) {
+  #loader #spinner {
+    width: 12vw;
+    height: 12vw;
+  }
+  #loader #spinner :after, #loader #spinner :before {
+    width: 12vw;
+    height: 12vw;
+  }
+  #loader #spinner div:before, #loader #spinner div:after {
+    margin-top: -6vw;
+    margin-left: -6vw;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #loader #spinner {
+    width: 10vw;
+    height: 10vw;
+  }
+  #loader #spinner :after, #loader #spinner :before {
+    width: 10vw;
+    height: 10vw;
+  }
+  #loader #spinner div:before, #loader #spinner div:after {
+    margin-top: -5vw;
+    margin-left: -5vw;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #loader #spinner {
+    width: 8vw;
+    height: 8vw;
+  }
+  #loader #spinner :after, #loader #spinner :before {
+    width: 8vw;
+    height: 8vw;
+  }
+  #loader #spinner div:before, #loader #spinner div:after {
+    margin-top: -4vw;
+    margin-left: -4vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #loader #spinner {
+    width: 8vw;
+    height: 8vw;
+  }
+  #loader #spinner :after, #loader #spinner :before {
+    width: 8vw;
+    height: 8vw;
+  }
+  #loader #spinner div:before, #loader #spinner div:after {
+    margin-top: -4vw;
+    margin-left: -4vw;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #loader #spinner {
+    width: 6vw;
+    height: 6vw;
+  }
+  #loader #spinner :after, #loader #spinner :before {
+    width: 6vw;
+    height: 6vw;
+  }
+  #loader #spinner div:before, #loader #spinner div:after {
+    margin-top: -3vw;
+    margin-left: -3vw;
+  }
+}
+@media (min-width: 1200px) {
+  #loader #spinner {
+    width: 4vw;
+    height: 4vw;
+  }
+  #loader #spinner :after, #loader #spinner :before {
+    width: 4vw;
+    height: 4vw;
+  }
+  #loader #spinner div:before, #loader #spinner div:after {
+    margin-top: -2vw;
+    margin-left: -2vw;
+  }
 }
 
 .hidden {
-  animation: fadeOut 1s;
+  animation: fadeOut 3s;
   animation-fill-mode: forwards;
 }
 
@@ -767,39 +880,6 @@ footer {
   background: #1c1c1c;
   color: white;
 }
-@media (max-width: 320px) {
-  footer {
-    height: 45px;
-  }
-  footer p {
-    margin: 0 5% 0 5%;
-  }
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  footer {
-    height: 45px;
-  }
-}
-@media (min-width: 480px) and (max-width: 768px) {
-  footer {
-    height: 45px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  footer {
-    height: 47.5px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1200px) {
-  footer {
-    height: 50px;
-  }
-}
-@media (min-width: 1200px) {
-  footer {
-    height: 52.5px;
-  }
-}
 
 #view .content-view-encode-decode {
   flex-direction: column;
@@ -845,6 +925,7 @@ footer {
     margin-bottom: -3%;
   }
   #view .content-view-encode-decode .div-cipher {
+    width: 90%;
     border-width: 5px;
     border-radius: 8px;
     margin: 5% 0 0 0;
@@ -875,6 +956,7 @@ footer {
     margin-bottom: -1%;
   }
   #view .content-view-encode-decode .div-cipher {
+    width: 85%;
     border-width: 6px;
     border-radius: 8px;
     margin: 2% 0 0 0;
@@ -905,6 +987,7 @@ footer {
     margin-bottom: 0;
   }
   #view .content-view-encode-decode .div-cipher {
+    width: 78%;
     border-width: 7px;
     border-radius: 8px;
     margin: 2% 0 0 0;
@@ -938,6 +1021,7 @@ footer {
     margin-bottom: -1%;
   }
   #view .content-view-encode-decode .div-cipher {
+    width: 70%;
     border-width: 8px;
     border-radius: 8px;
     margin: 2% 5% 0 5%;
@@ -971,6 +1055,7 @@ footer {
     margin-bottom: -1%;
   }
   #view .content-view-encode-decode .div-cipher {
+    width: 60%;
     border-width: 9px;
     border-radius: 8px;
     margin: 2% 7% 0 7%;
@@ -1004,6 +1089,7 @@ footer {
     margin-bottom: 0;
   }
   #view .content-view-encode-decode .div-cipher {
+    width: 50%;
     border-width: 10px;
     border-radius: 8px;
     margin: 3% 12% 0 12%;
