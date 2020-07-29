@@ -3,7 +3,7 @@
     "short_name": "Cipher",
     "icons": [
         {
-            "src": "assets/logo.png",
+            "src": "src/assets/logo.png",
             "sizes": "1256x1540",
             "type": "image/png"
         }
