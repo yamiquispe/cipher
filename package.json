@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "public/index.html",
   "license": "MIT",
-  "homepage": "https://yamiroot.github.io/cipher/public/index.html#/",
+  "homepage": "https://yamiroot.github.io/cipher/src/index.html#/",
   "scripts": {
     "htmlhint": "htmlhint public/*.html src/*.html test/*.html",
     "stylelint": "stylelint --aei src/**/*.css src/**/*.scss",
