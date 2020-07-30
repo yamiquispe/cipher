@@ -140,3 +140,6 @@ directories: 15
 - [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s)
   
   
+ ## Licencia
+
+Copyright © 2020, todos los derechos reservados.
