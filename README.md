@@ -75,19 +75,19 @@ Es una herramienta simple, de fácil uso y anónima. Estás tres característica
 
 - **View encode**
 
-<img src="./src/img/demogame.png" alt="Demo encode">
+<img src="./src/utils/demo-encode.png" alt="Demo encode">
 
 - **View decode**
 
-<img src="./src/img/demorules.png" alt="Demo decode">
+<img src="./src/utils/demo-decode.png" alt="Demo decode">
 
 - **View instructions**
 
-<img src="./src/img/demoerror.png" alt="Demo intructions">
+<img src="./src/utils/demo-instructions.png" alt="Demo intructions">
 
 - **View page error**
 
-<img src="./src/img/demoerror.png" alt="Demo page error">
+<img src="./src/utils/demo-error.png" alt="Demo page error">
 
 ## Sobre el proyecto
 
