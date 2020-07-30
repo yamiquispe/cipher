@@ -60,7 +60,7 @@ aplicación en el sistema ROT13.
 - Se mostrará un modal con el mensaje descifrado. 
 
 
-## Investigación UX:
+## Investigación UX
   
 #### ¿Quiénes son los usuarios y cuáles son los objetivos en relación con el producto?
 

@@ -2,7 +2,7 @@
 // Creamos un objeto global window
 global.window = global;
 
-const cipher = require('../src/js/cipher');
+require('../src/js/cipher');
 
 
 describe('Test del objeto global "cipher": ', () => {
