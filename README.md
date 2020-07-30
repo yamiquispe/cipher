@@ -62,13 +62,17 @@ aplicación en el sistema ROT13.
 
 ## Investigación UX:
   
-#### 1. ¿Quiénes son los usuarios y cuáles son los objetivos en relación con el producto?
+#### ¿Quiénes son los usuarios y cuáles son los objetivos en relación con el producto?
 
 Los usuarios son los agentes de la Policía Nacional del Perú y tiene por objetivo ser una herramienta de cifrado y descifrado para la información ingresada.
 
-#### 2. ¿Cómo el producto soluciona los problemas/necesidades de dichos usuarios?
+#### ¿Cómo el producto soluciona los problemas/necesidades de dichos usuarios?
 
 Es una herramienta simple, de fácil uso y anónima. Estás tres características protegen información sensible y personal ingresada por los usuarios; así también, simplifican tiempo de uso.
+
+#### Prototipo de baja fidelidad
+
+<img src="./src/utils/low-prototype.png" alt="Low fidelity prototype">
 
 
 ## Demos
