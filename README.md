@@ -72,7 +72,7 @@ Es una herramienta simple, de fácil uso y anónima. Estás tres característica
 
 #### Prototipo de baja fidelidad
 
-<center><img src="./src/utils/low-prototype.png" alt="Low fidelity prototype"></center>
+<p align="center"><img src="./src/utils/low-prototype.png" alt="Low fidelity prototype"></p>
 
 
 ## Demos
