@@ -72,18 +72,14 @@ Es una herramienta simple, de fácil uso y anónima. Estás tres característica
 
 #### Prototipo de baja fidelidad
 
-<img src="./src/utils/low-prototype.png" alt="Low fidelity prototype">
+<center><img src="./src/utils/low-prototype.png" alt="Low fidelity prototype"></center>
 
 
 ## Demos
 
-- **View encode**
+- **View encode/decode**
 
 <img src="./src/utils/demo-encode.png" alt="Demo encode">
-
-- **View decode**
-
-<img src="./src/utils/demo-decode.png" alt="Demo decode">
 
 - **View instructions**
 
