@@ -1,7 +1,7 @@
 <p align="center"><a href="public/logo.png"><img src="./src/assets/logo.png" width=80px></a></p>
 <h1 align="center">CIPHER</h1>
 <p align="center">
-<img src="https://img.shields.io/badge/build-passing-brightgreen">
+<img src="https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen">
 <img src="https://img.shields.io/badge/npm-v6.14.5-9cf">
 <img src="https://img.shields.io/badge/coverage-100%25-brightgreen">
 </p>
