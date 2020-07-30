@@ -9,9 +9,9 @@ export const validateInput = (offset, message, operation) => {
 
   // Casos: offset = ,89 (al ingresar 0.89); offset = .90 (al ingresar .90)
   //  9.90 (al ingresar 9.90); 9,90 (al ingresar 9.9)
-  if (offset === '' || offset.indexOf('.') >= 0) {
+  if (offset === '' || offset.indexOf('.') >= 0 || parseInt(offset) < 0) {
     messageModal.text = `Por favor, ingrese un número válido. El desplazamiento
-    debe ser un número entero.`;
+    debe ser un número entero positivo.`;
   } else if (message === '') {
     messageModal.text = 'Por favor, ingrese un texto.';
   } else if (message.split('').every((character) => character === ' ')) {

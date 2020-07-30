@@ -1,11 +1,10 @@
 {
   "name": "cipher",
   "version": "1.0.0",
-  "main": "public/index.html",
-  "license": "MIT",
+  "main": "src/index.html",
   "homepage": "https://yamiroot.github.io/cipher/src/index.html#/",
   "scripts": {
-    "htmlhint": "htmlhint public/*.html src/*.html test/*.html",
+    "htmlhint": "htmlhint src/*.html test/*.html",
     "stylelint": "stylelint --aei src/**/*.css src/**/*.scss",
     "eslint": "eslint --ext .js src/ test/",
     "pretest": "npm run eslint && npm run htmlhint && npm run stylelint",
@@ -14,15 +13,15 @@
     "start": "serve ./src"
   },
   "dependencies": {
-    "jest": "^24.9.0",
-    "opener": "^1.5.1",
-    "sass": "^1.26.8",
-    "serve": "^11.0.0"
+    "sass": "^1.26.8"
   },
   "devDependencies": {
     "eslint": "^7.3.1",
     "eslint-config-google": "^0.14.0",
     "htmlhint": "^0.14.1",
+    "jest": "^26.1.0",
+    "opener": "^1.5.1",
+    "serve": "^11.3.2",
     "stylelint": "^13.6.1",
     "stylelint-scss": "^3.18.0"
   }
